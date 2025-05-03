@@ -1,0 +1,11 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Sat May 03 2025 19:14:48
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: 08c350
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub train Run 2)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 3
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
