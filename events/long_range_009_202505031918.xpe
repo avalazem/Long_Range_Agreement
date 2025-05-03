@@ -1,0 +1,30 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Sat May 03 2025 19:18:33
+#sha1: 08c350
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-24-generic', version='#24-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:13:56 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+585,stdout,received,'Total number of trials: 40'
+585,stdout,received,'Expected Total duration: 492.00 s'
+966,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 6)
+#design: block_cnt,block_id,trial_cnt,trial_id
+966,design,logged,
+966,Experiment,started
+998,Stimulus,presented,187
+1097,Keyboard,received,32,wait
+1114,Stimulus,presented,188
+1713,Keyboard,received,116,wait
+1942,Keyboard,received,116,wait
+2143,Keyboard,received,116,wait
+2168,Stimulus,presented,0
+4168,stdout,received,'Starting main trial loop...'
+4168,stdout,received,'Trial 1: Target: 2000.00 Actual: 2025.00 Delta: 25.00'
+4193,Stimulus,presented,0
+4193,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/subject_01/sub_01_run_6/wavs/trial_1.wav'
+4913,Experiment,paused
+4955,Stimulus,presented,189
+5161,Keyboard,received,y,wait_char
+5161,Experiment,ended
+5187,Stimulus,presented,189

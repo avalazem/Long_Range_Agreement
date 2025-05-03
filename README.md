@@ -34,4 +34,4 @@ cd localizer
 
 
 python runVisualCategory.py --splash visual_categories/Instructions/Instructions.png
-python audiovis.py --total-duration 194000 audio_categories/sub1_audio.csv python audiovis.py --splash hand_categories/Instructions.png --total-duration 191000 hand_categories/sub1_hand.csv python audiovis.py --splash speech_categories/Instructions.png --total-duration 191000 speech_categories/sub1_speech.csv
+python audiovis.py --total-duration 194000 audio_categories/sub1_audio.csv python audiovis.py --splash hand_categories/instructions.png --total-duration 191000 hand_categories/sub1_hand.csv python audiovis.py --splash speech_categories/instructions.png --total-duration 191000 speech_categories/sub1_speech.csv
