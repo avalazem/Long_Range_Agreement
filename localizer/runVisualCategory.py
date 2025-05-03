@@ -17,6 +17,10 @@ from generateSubjectCsv import *
 
 parser = optparse.OptionParser()
 
+parser.add_option("--splash", 
+                  dest = 'splash',
+                  help = "displays a picture (e.g. containing instructions) before starting the experiment")
+
 parser.add_option('-s', '--idSubject',
                   dest='subjectId',
                   type='int',
@@ -32,10 +36,10 @@ parser.add_option('-w', '--windowedDisplay',
                   action='store_false',
                   dest='full_screen',
                   default=True,
-                  help='Toggle windowed siplay')
+                  help='Toggle window display')
 
 (options, args) = parser.parse_args()
-
+splash_screen = options.splash
 SUBJ_ID = options.subjectId
 GENERATE_PARTICIPANT_CSV = options.generate_participant_csv
 FULL_SCREEN = options.full_screen
@@ -49,7 +53,7 @@ BACKGROUND_COLOR = (0, 0, 0)
 TEXT_SIZE = 48
 TEXT_COLOR = ( 128, 128, 128)
 
-N_T_WAIT = 1 # number of TTL to wait for at the start
+N_T_WAIT = 3 # number of TTL to wait for at the start
 
 EARLY_BLANK_DURATION = 6000
 LATE_BLANK_DURATION = 6000
@@ -61,7 +65,7 @@ MAX_BLOCK_DURATION = 438000  # time in milliseconds
 MRI_SYNC_KEY = expyriment.misc.constants.K_t
 
 KEY_TRANSLATION = {
-    expyriment.misc.constants.K_y: 'y' # Changed to only allow 'y' (left hand button presses in fMRI scanner)
+    expyriment.misc.constants.K_f: 'f' # Changed to only allow 'f' (right hand button presses in fMRI scanner)
 }
 AUTHORIZED_KEYS = KEY_TRANSLATION.keys()
 KEYPRESS_DELAY = 100
@@ -132,7 +136,7 @@ star = stimuli.Picture(os.path.join(STIM_DIR,
 star.preload
 
 # Instructions
-instruction_text = """Appuyez le bouton quand vous voyez une étoile."""
+instruction_text = 'Waiting for scanner sync (or press \'t\')'
 wm = stimuli.TextLine(instruction_text,
                       text_size=TEXT_SIZE,
                       text_colour=TEXT_COLOR,
@@ -226,7 +230,7 @@ def wait_for_mri_sync(n_t_wait):
     t_signal_count = 0
     while t_signal_count < n_t_wait :
         kb.wait(MRI_SYNC_KEY)
-        present(bs)
+        #present(bs) # remove so we know when the ttl signal is sent
         t_signal_count += 1
 
 
@@ -265,9 +269,13 @@ def check_key_for(duration):
 ###############################################################################
 
 # Starting experiment
-expyriment.control.start(
-    skip_ready_screen=True,
-    subject_id=SUBJ_ID)
+expyriment.control.start()
+
+if not (splash_screen is None):
+    splashs = stimuli.Picture(splash_screen)
+    splashs.scale_to_fullscreen()
+    splashs.present()
+    kb.wait_char(' ')
 
 
 for block in exp.blocks:

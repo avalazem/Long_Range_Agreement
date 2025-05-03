@@ -1,0 +1,33 @@
+#Expyriment 0.11.dev5 (Python 3.11.9), .xpd-file, coding: cp1252
+#date: Wed Apr 02 2025 15:47:31
+#--EXPERIMENT INFO
+#e mainfile: audiovis.py
+#e sha1: a9ec50
+#e modules: 
+#e Experiment: HiRes Experiment
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 1
+subject_id,condition,time,stype,id,target_time
+1,,1992,"picture,hum.png,2000"
+1,,5014,"blank,blank,5000"
+1,,15992,"picture,speech.png,16000"
+1,,19018,"blank,blank,19000"
+1,,20991,"text,signal,21000"
+1,,21215,"blank,blank,21200"
+1,,25991,"text,invite,26000"
+1,,26216,"blank,blank,26200"
+1,,31992,"picture,speech.png,32000"
+1,,35015,"blank,blank,35000"
+1,,36992,"text,tennis,37000"
+1,,37213,"blank,blank,37200"
+1,,41991,"text,accent,42000"
+1,,42216,"blank,blank,42200"
+1,,49992,"picture,hum.png,50000"
+1,,53015,"blank,blank,53000"
+1,,63992,"picture,speech.png,64000"
+1,,67017,"blank,blank,67000"
+1,,68991,"text,effort,69000"
+1,,69215,"blank,blank,69200"
+1,,73991,"text,vision,74000"
+1,,74218,"blank,blank,74200"

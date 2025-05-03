@@ -1,0 +1,47 @@
+#Expyriment 0.11.dev5 (Python 3.11.9), .xpd-file, coding: cp1252
+#date: Wed Apr 02 2025 23:39:19
+#--EXPERIMENT INFO
+#e mainfile: audiovis.py
+#e sha1: 6408e4
+#e modules: 
+#e Experiment: HiRes Experiment
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 20
+subject_id,condition,time,stype,id,target_time
+20,,1992,"picture,finger.png,2000"
+20,,5014,"blank,blank,5000"
+20,,14992,"picture,write.png,15000"
+20,,18018,"blank,blank,18000"
+20,,20992,"text,stress,21000"
+20,,21216,"blank,blank,21200"
+20,,30992,"picture,write.png,31000"
+20,,34015,"blank,blank,34000"
+20,,36992,"text,tennis,37000"
+20,,37216,"blank,blank,37200"
+20,,46992,"picture,finger.png,47000"
+20,,50017,"blank,blank,50000"
+20,,62992,"picture,write.png,63000"
+20,,66021,"blank,blank,66000"
+20,,68991,"text,vision,69000"
+20,,69214,"blank,blank,69200"
+20,,78992,"picture,finger.png,79000"
+20,,82013,"blank,blank,82000"
+20,,94992,"picture,finger.png,95000"
+20,,98024,"blank,blank,98000"
+20,,110992,"picture,write.png,111000"
+20,,114030,"blank,blank,114000"
+20,,116991,"text,basket,117000"
+20,,117219,"blank,blank,117200"
+20,,126992,"picture,finger.png,127000"
+20,,130022,"blank,blank,130000"
+20,,142992,"picture,write.png,143000"
+20,,146024,"blank,blank,146000"
+20,,148991,"text,nation,149000"
+20,,149219,"blank,blank,149200"
+20,,158992,"picture,write.png,159000"
+20,,162025,"blank,blank,162000"
+20,,164991,"text,signal,165000"
+20,,165220,"blank,blank,165200"
+20,,174992,"picture,finger.png,175000"
+20,,178013,"blank,blank,178000"

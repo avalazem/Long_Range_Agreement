@@ -1,0 +1,134 @@
+#Expyriment 0.11.dev5 (Python 3.11.9), .xpe-file, coding: cp1252
+#date: Wed Apr 02 2025 23:45:20
+#sha1: 6408e4
+#modules: 
+#display: size=(1280, 1028), window_mode=False, opengl=2
+#os: uname_result(system='Windows', node='Geoff3', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+4972,stdout,received,"Pandas(Index=0, onset=2000, type='picture', stim='hum.png')"
+4977,Picture,loaded,speech_categories\hum.png
+5024,stdout,received,"Pandas(Index=1, onset=5000, type='blank', stim=nan)"
+5024,stdout,received,"Pandas(Index=2, onset=15000, type='picture', stim='speech.png')"
+5029,Picture,loaded,speech_categories\speech.png
+5081,stdout,received,"Pandas(Index=3, onset=19000, type='blank', stim=nan)"
+5081,stdout,received,"Pandas(Index=4, onset=21000, type='text', stim='signal')"
+5088,stdout,received,"Pandas(Index=5, onset=26000, type='text', stim='invite')"
+5092,stdout,received,"Pandas(Index=6, onset=31000, type='picture', stim='speech.png')"
+5092,stdout,received,"Pandas(Index=7, onset=35000, type='blank', stim=nan)"
+5093,stdout,received,"Pandas(Index=8, onset=37000, type='text', stim='tennis')"
+5097,stdout,received,"Pandas(Index=9, onset=42000, type='text', stim='accent')"
+5101,stdout,received,"Pandas(Index=10, onset=47000, type='picture', stim='hum.png')"
+5101,stdout,received,"Pandas(Index=11, onset=53000, type='blank', stim=nan)"
+5102,stdout,received,"Pandas(Index=12, onset=63000, type='picture', stim='speech.png')"
+5102,stdout,received,"Pandas(Index=13, onset=67000, type='blank', stim=nan)"
+5102,stdout,received,"Pandas(Index=14, onset=69000, type='text', stim='effort')"
+5105,stdout,received,"Pandas(Index=15, onset=74000, type='text', stim='vision')"
+5108,stdout,received,"Pandas(Index=16, onset=79000, type='picture', stim='hum.png')"
+5109,stdout,received,"Pandas(Index=17, onset=85000, type='blank', stim=nan)"
+5109,stdout,received,"Pandas(Index=18, onset=95000, type='picture', stim='hum.png')"
+5110,stdout,received,"Pandas(Index=19, onset=101000, type='blank', stim=nan)"
+5110,stdout,received,"Pandas(Index=20, onset=111000, type='picture', stim='speech.png')"
+5110,stdout,received,"Pandas(Index=21, onset=115000, type='blank', stim=nan)"
+5111,stdout,received,"Pandas(Index=22, onset=117000, type='text', stim='signal')"
+5111,stdout,received,"Pandas(Index=23, onset=122000, type='text', stim='stress')"
+5115,stdout,received,"Pandas(Index=24, onset=127000, type='picture', stim='hum.png')"
+5115,stdout,received,"Pandas(Index=25, onset=133000, type='blank', stim=nan)"
+5116,stdout,received,"Pandas(Index=26, onset=143000, type='picture', stim='speech.png')"
+5116,stdout,received,"Pandas(Index=27, onset=147000, type='blank', stim=nan)"
+5116,stdout,received,"Pandas(Index=28, onset=149000, type='text', stim='temple')"
+5119,stdout,received,"Pandas(Index=29, onset=154000, type='text', stim='budget')"
+5123,stdout,received,"Pandas(Index=30, onset=159000, type='picture', stim='speech.png')"
+5125,stdout,received,"Pandas(Index=31, onset=163000, type='blank', stim=nan)"
+5126,stdout,received,"Pandas(Index=32, onset=165000, type='text', stim='garage')"
+5130,stdout,received,"Pandas(Index=33, onset=170000, type='text', stim='blonde')"
+5134,stdout,received,"Pandas(Index=34, onset=175000, type='picture', stim='hum.png')"
+5134,stdout,received,"Pandas(Index=35, onset=181000, type='blank', stim=nan)"
+11735,design,log,
+#design: #exp: HiRes Experiment
+#design: #dvn: condition,time,stype,id,target_time
+#design: block_cnt,block_id,trial_cnt,trial_id
+11735,design,logged,
+11735,Experiment,started
+11758,Picture,loaded,speech_categories/Instructions.png
+11783,Stimulus,presented,18
+15706,Keyboard,received, ,wait_char
+15711,Stimulus,presented,1
+17275,Keyboard,received,116,wait
+17884,Keyboard,received,116,wait
+18293,Keyboard,received,116,wait
+18296,Stimulus,presented,2
+20288,Stimulus,presented,3
+23317,Stimulus,presented,0
+23329,Stimulus,presented,2
+33288,Stimulus,presented,4
+36310,Stimulus,presented,0
+36313,Stimulus,presented,2
+39288,Stimulus,presented,5
+39511,Stimulus,presented,0
+39528,Stimulus,presented,2
+44288,Stimulus,presented,6
+44511,Stimulus,presented,0
+44528,Stimulus,presented,2
+49288,Stimulus,presented,4
+52317,Stimulus,presented,0
+52328,Stimulus,presented,2
+55288,Stimulus,presented,7
+55516,Stimulus,presented,0
+55527,Stimulus,presented,2
+60288,Stimulus,presented,8
+60516,Stimulus,presented,0
+60528,Stimulus,presented,2
+65288,Stimulus,presented,3
+68315,Stimulus,presented,0
+68329,Stimulus,presented,2
+81288,Stimulus,presented,4
+84320,Stimulus,presented,0
+84326,Stimulus,presented,2
+87288,Stimulus,presented,9
+87513,Stimulus,presented,0
+87526,Stimulus,presented,2
+92288,Stimulus,presented,10
+92516,Stimulus,presented,0
+92531,Stimulus,presented,2
+97288,Stimulus,presented,3
+100316,Stimulus,presented,0
+100330,Stimulus,presented,2
+113288,Stimulus,presented,3
+116312,Stimulus,presented,0
+116329,Stimulus,presented,2
+129289,Stimulus,presented,4
+132311,Stimulus,presented,0
+132329,Stimulus,presented,2
+135288,Stimulus,presented,5
+135518,Stimulus,presented,0
+135529,Stimulus,presented,2
+140288,Stimulus,presented,11
+140511,Stimulus,presented,0
+140528,Stimulus,presented,2
+145288,Stimulus,presented,3
+148311,Stimulus,presented,0
+148329,Stimulus,presented,2
+161288,Stimulus,presented,4
+164315,Stimulus,presented,0
+164327,Stimulus,presented,2
+167288,Stimulus,presented,12
+167515,Stimulus,presented,0
+167527,Stimulus,presented,2
+172288,Stimulus,presented,13
+172512,Stimulus,presented,0
+172527,Stimulus,presented,2
+177289,Stimulus,presented,4
+180310,Stimulus,presented,0
+180326,Stimulus,presented,2
+183288,Stimulus,presented,14
+183509,Stimulus,presented,0
+183526,Stimulus,presented,2
+188288,Stimulus,presented,15
+188512,Stimulus,presented,0
+188526,Stimulus,presented,2
+193288,Stimulus,presented,3
+196311,Stimulus,presented,0
+196326,Stimulus,presented,2
+209325,Experiment,ended
+209350,Data,saved
+209356,Stimulus,presented,19

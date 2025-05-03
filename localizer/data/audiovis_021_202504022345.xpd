@@ -1,0 +1,59 @@
+#Expyriment 0.11.dev5 (Python 3.11.9), .xpd-file, coding: cp1252
+#date: Wed Apr 02 2025 23:45:20
+#--EXPERIMENT INFO
+#e mainfile: audiovis.py
+#e sha1: 6408e4
+#e modules: 
+#e Experiment: HiRes Experiment
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 21
+subject_id,condition,time,stype,id,target_time
+21,,1992,"picture,hum.png,2000"
+21,,5020,"blank,blank,5000"
+21,,14992,"picture,speech.png,15000"
+21,,18014,"blank,blank,18000"
+21,,20992,"text,signal,21000"
+21,,21215,"blank,blank,21200"
+21,,25991,"text,invite,26000"
+21,,26214,"blank,blank,26200"
+21,,30992,"picture,speech.png,31000"
+21,,34021,"blank,blank,34000"
+21,,36992,"text,tennis,37000"
+21,,37220,"blank,blank,37200"
+21,,41992,"text,accent,42000"
+21,,42220,"blank,blank,42200"
+21,,46992,"picture,hum.png,47000"
+21,,50019,"blank,blank,50000"
+21,,62992,"picture,speech.png,63000"
+21,,66023,"blank,blank,66000"
+21,,68992,"text,effort,69000"
+21,,69217,"blank,blank,69200"
+21,,73992,"text,vision,74000"
+21,,74219,"blank,blank,74200"
+21,,78992,"picture,hum.png,79000"
+21,,82019,"blank,blank,82000"
+21,,94992,"picture,hum.png,95000"
+21,,98015,"blank,blank,98000"
+21,,110992,"picture,speech.png,111000"
+21,,114015,"blank,blank,114000"
+21,,116991,"text,signal,117000"
+21,,117221,"blank,blank,117200"
+21,,121991,"text,stress,122000"
+21,,122215,"blank,blank,122200"
+21,,126992,"picture,hum.png,127000"
+21,,130015,"blank,blank,130000"
+21,,142992,"picture,speech.png,143000"
+21,,146019,"blank,blank,146000"
+21,,148992,"text,temple,149000"
+21,,149219,"blank,blank,149200"
+21,,153992,"text,budget,154000"
+21,,154215,"blank,blank,154200"
+21,,158993,"picture,speech.png,159000"
+21,,162014,"blank,blank,162000"
+21,,164991,"text,garage,165000"
+21,,165213,"blank,blank,165200"
+21,,169991,"text,blonde,170000"
+21,,170215,"blank,blank,170200"
+21,,174992,"picture,hum.png,175000"
+21,,178015,"blank,blank,178000"

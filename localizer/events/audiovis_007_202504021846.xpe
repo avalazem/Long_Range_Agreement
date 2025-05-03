@@ -1,0 +1,61 @@
+#Expyriment 0.11.dev5 (Python 3.11.9), .xpe-file, coding: cp1252
+#date: Wed Apr 02 2025 18:46:27
+#sha1: 936d24
+#modules: 
+#display: size=(1280, 1028), window_mode=False, opengl=2
+#os: uname_result(system='Windows', node='Geoff3', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+5523,stdout,received,"Pandas(Index=0, onset=2000, type='picture', stim='finger.png')"
+5530,Picture,loaded,hand_categories\finger.png
+5593,stdout,received,"Pandas(Index=1, onset=5000, type='fixation', stim=nan)"
+5595,stdout,received,"Pandas(Index=2, onset=16000, type='picture', stim='write.png')"
+5603,Picture,loaded,hand_categories\write.png
+5667,stdout,received,"Pandas(Index=3, onset=19000, type='fixation', stim=nan)"
+5667,stdout,received,"Pandas(Index=4, onset=21000, type='text', stim='stress')"
+5673,stdout,received,"Pandas(Index=5, onset=34000, type='picture', stim='write.png')"
+5673,stdout,received,"Pandas(Index=6, onset=37000, type='fixation', stim=nan)"
+5673,stdout,received,"Pandas(Index=7, onset=39000, type='text', stim='tennis')"
+5677,stdout,received,"Pandas(Index=8, onset=50000, type='picture', stim='finger.png')"
+5677,stdout,received,"Pandas(Index=9, onset=53000, type='fixation', stim=nan)"
+5677,stdout,received,"Pandas(Index=10, onset=66000, type='picture', stim='write.png')"
+5678,stdout,received,"Pandas(Index=11, onset=69000, type='fixation', stim=nan)"
+5678,stdout,received,"Pandas(Index=12, onset=71000, type='text', stim='vision')"
+5682,stdout,received,"Pandas(Index=13, onset=82000, type='picture', stim='finger.png')"
+5683,stdout,received,"Pandas(Index=14, onset=85000, type='fixation', stim=nan)"
+5684,stdout,received,"Pandas(Index=15, onset=86000, type='picture', stim='finger.png')"
+5684,stdout,received,"Pandas(Index=16, onset=89000, type='fixation', stim=nan)"
+5684,stdout,received,"Pandas(Index=17, onset=102000, type='picture', stim='write.png')"
+5687,stdout,received,"Pandas(Index=18, onset=105000, type='fixation', stim=nan)"
+5687,stdout,received,"Pandas(Index=19, onset=115000, type='text', stim='basket')"
+5694,stdout,received,"Pandas(Index=20, onset=126000, type='picture', stim='finger.png')"
+5698,stdout,received,"Pandas(Index=21, onset=129000, type='fixation', stim=nan)"
+5698,stdout,received,"Pandas(Index=22, onset=142000, type='picture', stim='write.png')"
+5698,stdout,received,"Pandas(Index=23, onset=145000, type='fixation', stim=nan)"
+5699,stdout,received,"Pandas(Index=24, onset=147000, type='text', stim='nation')"
+5703,stdout,received,"Pandas(Index=25, onset=160000, type='picture', stim='write.png')"
+5703,stdout,received,"Pandas(Index=26, onset=163000, type='fixation', stim=nan)"
+5704,stdout,received,"Pandas(Index=27, onset=165000, type='text', stim='signal')"
+5707,stdout,received,"Pandas(Index=28, onset=176000, type='picture', stim='finger.png')"
+5709,stdout,received,"Pandas(Index=29, onset=179000, type='fixation', stim=nan)"
+10807,design,log,
+#design: #exp: HiRes Experiment
+#design: #dvn: condition,time,stype,id,target_time
+#design: block_cnt,block_id,trial_cnt,trial_id
+10807,design,logged,
+10807,Experiment,started
+10816,Picture,loaded,hand_categories/Instructions.png
+10845,Stimulus,presented,13
+11410,Keyboard,received, ,wait_char
+11415,Stimulus,presented,1
+11844,Keyboard,received,116,wait
+12015,Keyboard,received,116,wait
+12156,Keyboard,received,116,wait
+12159,Stimulus,presented,2
+14151,Stimulus,presented,3
+17205,Stimulus,presented,0
+24217,Experiment,paused
+24222,Stimulus,presented,14
+24582,Keyboard,received,y,wait_char
+24582,Experiment,ended
+24600,Data,saved
+24604,Stimulus,presented,14
