@@ -6,8 +6,8 @@ LONG-RANGE AGREEMENT
 
 # Run Instructions:
 
-python Code/long_range.py Stimuli/training/sub_train_run_1
-python Code/long_range.py Stimuli/training/sub_train_run_2
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_1
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_2
 
 
 # 2. Main-Exp
@@ -15,12 +15,12 @@ python Code/long_range.py Stimuli/training/sub_train_run_2
 # Run Instructions:
 cd main-exp
 
-python Code/long_range.py Stimuli/subject_01/sub_01_run_1
-python Code/long_range.py Stimuli/subject_01/sub_01_run_2
-python Code/long_range.py Stimuli/subject_01/sub_01_run_3
-python Code/long_range.py Stimuli/subject_01/sub_01_run_4
-python Code/long_range.py Stimuli/subject_01/sub_01_run_5
-python Code/long_range.py Stimuli/subject_01/sub_01_run_6
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_1
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_2
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_3
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_4
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_5
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_6
 
 # 3. Localizer (all have 2.0 s Merci after)
 # 607 s (10.12 min) total:
