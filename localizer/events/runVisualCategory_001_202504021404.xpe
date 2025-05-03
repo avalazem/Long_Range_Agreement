@@ -1,0 +1,244 @@
+#Expyriment 0.11.dev5 (Python 3.11.9), .xpe-file, coding: cp1252
+#date: Wed Apr 02 2025 14:04:33
+#sha1: a69969
+#modules: generateSubjectCsv.py (8bdbc6)
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Windows', node='Geoff3', release='10', version='10.0.26100', machine='AMD64')
+Time,Type,Event,Value,Detail,Detail2
+5262,Picture,loaded,visual_categories\wordEF17.png
+5265,Picture,loaded,visual_categories\wordEF17.png
+5271,Picture,loaded,visual_categories\wordEF14.png
+5275,Picture,loaded,visual_categories\wordEF14.png
+5279,Picture,loaded,visual_categories\wordEF04.png
+5283,Picture,loaded,visual_categories\wordEF04.png
+5287,Picture,loaded,visual_categories\wordEF15.png
+5290,Picture,loaded,visual_categories\wordEF15.png
+5294,Picture,loaded,visual_categories\wordEF18.png
+5297,Picture,loaded,visual_categories\wordEF18.png
+5301,Picture,loaded,visual_categories\wordEF20.png
+5304,Picture,loaded,visual_categories\wordEF20.png
+5308,Picture,loaded,visual_categories\wordEF05.png
+5312,Picture,loaded,visual_categories\wordEF05.png
+5316,Picture,loaded,visual_categories\wordEF06.png
+5319,Picture,loaded,visual_categories\wordEF06.png
+5323,Picture,loaded,visual_categories\wordEF01.png
+5326,Picture,loaded,visual_categories\wordEF01.png
+5330,Picture,loaded,visual_categories\wordEF09.png
+5333,Picture,loaded,visual_categories\wordEF09.png
+5337,Picture,loaded,visual_categories\wordEF13.png
+5340,Picture,loaded,visual_categories\wordEF13.png
+5344,Picture,loaded,visual_categories\wordEF07.png
+5347,Picture,loaded,visual_categories\wordEF07.png
+5351,Picture,loaded,visual_categories\wordEF16.png
+5355,Picture,loaded,visual_categories\wordEF16.png
+5360,Picture,loaded,visual_categories\wordEF02.png
+5363,Picture,loaded,visual_categories\wordEF02.png
+5368,Picture,loaded,visual_categories\wordEF10.png
+5371,Picture,loaded,visual_categories\wordEF10.png
+5375,Picture,loaded,visual_categories\wordEF11.png
+5378,Picture,loaded,visual_categories\wordEF11.png
+5382,Picture,loaded,visual_categories\wordEF08.png
+5385,Picture,loaded,visual_categories\wordEF08.png
+5389,Picture,loaded,visual_categories\wordEF12.png
+5392,Picture,loaded,visual_categories\wordEF12.png
+5396,Picture,loaded,visual_categories\wordEF03.png
+5399,Picture,loaded,visual_categories\wordEF03.png
+5403,Picture,loaded,visual_categories\Mu17.png
+5407,Picture,loaded,visual_categories\Mu17.png
+5410,Picture,loaded,visual_categories\Mu08.png
+5414,Picture,loaded,visual_categories\Mu08.png
+5418,Picture,loaded,visual_categories\Mu16.png
+5421,Picture,loaded,visual_categories\Mu16.png
+5426,Picture,loaded,visual_categories\Mu04.png
+5428,Picture,loaded,visual_categories\Mu04.png
+5433,Picture,loaded,visual_categories\Mu02.png
+5436,Picture,loaded,visual_categories\Mu02.png
+5440,Picture,loaded,visual_categories\Mu09.png
+5443,Picture,loaded,visual_categories\Mu09.png
+5447,Picture,loaded,visual_categories\Mu01.png
+5450,Picture,loaded,visual_categories\Mu01.png
+5454,Picture,loaded,visual_categories\Mu13.png
+5457,Picture,loaded,visual_categories\Mu13.png
+5461,Picture,loaded,visual_categories\Mu05.png
+5467,Picture,loaded,visual_categories\Mu05.png
+5471,Picture,loaded,visual_categories\Mu03.png
+5475,Picture,loaded,visual_categories\Mu03.png
+5481,Picture,loaded,visual_categories\Mu14.png
+5486,Picture,loaded,visual_categories\Mu14.png
+5490,Picture,loaded,visual_categories\Mu12.png
+5495,Picture,loaded,visual_categories\Mu12.png
+5499,Picture,loaded,visual_categories\Mu07.png
+5504,Picture,loaded,visual_categories\Mu07.png
+5508,Picture,loaded,visual_categories\Mu15.png
+5512,Picture,loaded,visual_categories\Mu15.png
+5516,Picture,loaded,visual_categories\Mu10.png
+5521,Picture,loaded,visual_categories\Mu10.png
+5525,Picture,loaded,visual_categories\Mu19.png
+5529,Picture,loaded,visual_categories\Mu19.png
+5533,Picture,loaded,visual_categories\Mu18.png
+5539,Picture,loaded,visual_categories\Mu18.png
+5544,Picture,loaded,visual_categories\Mu11.png
+5549,Picture,loaded,visual_categories\Mu11.png
+5553,Picture,loaded,visual_categories\Mu06.png
+5558,Picture,loaded,visual_categories\Mu06.png
+5562,Picture,loaded,visual_categories\Mu20.png
+5565,Picture,loaded,visual_categories\Mu20.png
+5570,Picture,loaded,visual_categories\wordEF19.png
+5574,Picture,loaded,visual_categories\wordEF19.png
+5584,Picture,loaded,visual_categories\face13.png
+5594,Picture,loaded,visual_categories\face13.png
+5614,Picture,loaded,visual_categories\face12.png
+5640,Picture,loaded,visual_categories\face12.png
+5656,Picture,loaded,visual_categories\face03.png
+5671,Picture,loaded,visual_categories\face03.png
+5688,Picture,loaded,visual_categories\face10.png
+5699,Picture,loaded,visual_categories\face10.png
+5709,Picture,loaded,visual_categories\face15.png
+5722,Picture,loaded,visual_categories\face15.png
+5736,Picture,loaded,visual_categories\face04.png
+5754,Picture,loaded,visual_categories\face04.png
+5769,Picture,loaded,visual_categories\face01.png
+5783,Picture,loaded,visual_categories\face01.png
+5797,Picture,loaded,visual_categories\face14.png
+5811,Picture,loaded,visual_categories\face14.png
+5824,Picture,loaded,visual_categories\face16.png
+5835,Picture,loaded,visual_categories\face16.png
+5857,Picture,loaded,visual_categories\face02.png
+5868,Picture,loaded,visual_categories\face02.png
+5888,Picture,loaded,visual_categories\face08.png
+5899,Picture,loaded,visual_categories\face08.png
+5912,Picture,loaded,visual_categories\face05.png
+5928,Picture,loaded,visual_categories\face05.png
+5941,Picture,loaded,visual_categories\face18.png
+5954,Picture,loaded,visual_categories\face18.png
+5967,Picture,loaded,visual_categories\face17.png
+5979,Picture,loaded,visual_categories\face17.png
+5992,Picture,loaded,visual_categories\face11.png
+6002,Picture,loaded,visual_categories\face11.png
+6016,Picture,loaded,visual_categories\face07.png
+6028,Picture,loaded,visual_categories\face07.png
+6043,Picture,loaded,visual_categories\face06.png
+6053,Picture,loaded,visual_categories\face06.png
+6065,Picture,loaded,visual_categories\face09.png
+6078,Picture,loaded,visual_categories\face09.png
+6096,Picture,loaded,visual_categories\face20.png
+6114,Picture,loaded,visual_categories\face20.png
+6128,Picture,loaded,visual_categories\face19.png
+6140,Picture,loaded,visual_categories\face19.png
+6146,Picture,loaded,visual_categories\wordC02.png
+6152,Picture,loaded,visual_categories\wordC02.png
+6157,Picture,loaded,visual_categories\wordC20.png
+6162,Picture,loaded,visual_categories\wordC20.png
+6167,Picture,loaded,visual_categories\wordC15.png
+6172,Picture,loaded,visual_categories\wordC15.png
+6177,Picture,loaded,visual_categories\wordC11.png
+6182,Picture,loaded,visual_categories\wordC11.png
+6186,Picture,loaded,visual_categories\wordC19.png
+6191,Picture,loaded,visual_categories\wordC19.png
+6195,Picture,loaded,visual_categories\wordC04.png
+6200,Picture,loaded,visual_categories\wordC04.png
+6205,Picture,loaded,visual_categories\wordC09.png
+6210,Picture,loaded,visual_categories\wordC09.png
+6215,Picture,loaded,visual_categories\wordC06.png
+6221,Picture,loaded,visual_categories\wordC06.png
+6225,Picture,loaded,visual_categories\wordC08.png
+6229,Picture,loaded,visual_categories\wordC08.png
+6234,Picture,loaded,visual_categories\wordC12.png
+6239,Picture,loaded,visual_categories\wordC12.png
+6243,Picture,loaded,visual_categories\wordC18.png
+6248,Picture,loaded,visual_categories\wordC18.png
+6252,Picture,loaded,visual_categories\wordC14.png
+6258,Picture,loaded,visual_categories\wordC14.png
+6262,Picture,loaded,visual_categories\wordC13.png
+6267,Picture,loaded,visual_categories\wordC13.png
+6272,Picture,loaded,visual_categories\wordC17.png
+6277,Picture,loaded,visual_categories\wordC17.png
+6281,Picture,loaded,visual_categories\wordC16.png
+6287,Picture,loaded,visual_categories\wordC16.png
+6291,Picture,loaded,visual_categories\wordC01.png
+6295,Picture,loaded,visual_categories\wordC01.png
+6299,Picture,loaded,visual_categories\wordC05.png
+6305,Picture,loaded,visual_categories\wordC05.png
+6309,Picture,loaded,visual_categories\wordC07.png
+6313,Picture,loaded,visual_categories\wordC07.png
+6318,Picture,loaded,visual_categories\wordC03.png
+6322,Picture,loaded,visual_categories\wordC03.png
+6326,Picture,loaded,visual_categories\wordC10.png
+6332,Picture,loaded,visual_categories\wordC10.png
+6338,Picture,loaded,visual_categories\emoji09.png
+6344,Picture,loaded,visual_categories\emoji09.png
+6349,Picture,loaded,visual_categories\emoji11.png
+6356,Picture,loaded,visual_categories\emoji11.png
+6360,Picture,loaded,visual_categories\emoji05.png
+6367,Picture,loaded,visual_categories\emoji05.png
+6389,Picture,loaded,visual_categories\emoji12.png
+6395,Picture,loaded,visual_categories\emoji12.png
+6400,Picture,loaded,visual_categories\emoji07.png
+6405,Picture,loaded,visual_categories\emoji07.png
+6409,Picture,loaded,visual_categories\emoji20.png
+6416,Picture,loaded,visual_categories\emoji20.png
+6421,Picture,loaded,visual_categories\emoji06.png
+6427,Picture,loaded,visual_categories\emoji06.png
+6431,Picture,loaded,visual_categories\emoji14.png
+6438,Picture,loaded,visual_categories\emoji14.png
+6443,Picture,loaded,visual_categories\emoji13.png
+6450,Picture,loaded,visual_categories\emoji13.png
+6454,Picture,loaded,visual_categories\emoji02.png
+6460,Picture,loaded,visual_categories\emoji02.png
+6464,Picture,loaded,visual_categories\emoji17.png
+6469,Picture,loaded,visual_categories\emoji17.png
+6474,Picture,loaded,visual_categories\emoji04.png
+6479,Picture,loaded,visual_categories\emoji04.png
+6484,Picture,loaded,visual_categories\emoji03.png
+6490,Picture,loaded,visual_categories\emoji03.png
+6495,Picture,loaded,visual_categories\emoji01.png
+6500,Picture,loaded,visual_categories\emoji01.png
+6505,Picture,loaded,visual_categories\emoji16.png
+6509,Picture,loaded,visual_categories\emoji16.png
+6514,Picture,loaded,visual_categories\emoji08.png
+6518,Picture,loaded,visual_categories\emoji08.png
+6523,Picture,loaded,visual_categories\emoji19.png
+6528,Picture,loaded,visual_categories\emoji19.png
+6532,Picture,loaded,visual_categories\emoji15.png
+6537,Picture,loaded,visual_categories\emoji15.png
+6541,Picture,loaded,visual_categories\emoji18.png
+6546,Picture,loaded,visual_categories\emoji18.png
+6551,Picture,loaded,visual_categories\emoji10.png
+6556,Picture,loaded,visual_categories\emoji10.png
+105386,design,log,
+#design: #exp: Visualcat_Localizer
+#design: #dvn: trial_id,target_time,start_time,end_time,is_late,cond,hasStar,stim
+#design: block_cnt,block_id,trial_cnt,trial_id,cond,hasStar,onset,rest,stimuli,trial_id
+#design: 0,0,0,0,wordEF,1,6000,6000,17 14 04 15 18 20 05 06 01 09 13 07 16 02 10 11 08 12 00 03,0
+#design: 0,0,1,1,Mu,0,18000,6000,17 08 16 04 02 09 01 13 05 03 14 12 07 15 10 19 18 11 06 20,1
+#design: 0,0,2,2,wordEF,0,30000,6000,05 09 20 07 04 15 01 19 03 13 10 17 11 12 14 06 08 16 18 02,2
+#design: 0,0,3,3,face,0,42000,6000,13 12 03 10 15 04 01 14 16 02 08 05 18 17 11 07 06 09 20 19,3
+#design: 0,0,4,4,wordC,0,54000,6000,02 20 15 11 19 04 09 06 08 12 18 14 13 17 16 01 05 07 03 10,4
+#design: 0,0,5,5,emoji,1,66000,6000,09 11 05 12 07 20 06 14 13 02 17 04 03 00 01 16 08 19 15 18,5
+#design: 0,0,6,6,wordEF,0,78000,6000,10 17 07 04 09 08 12 20 06 01 19 11 13 02 14 16 05 03 15 18,6
+#design: 0,0,7,7,Mu,0,90000,6000,12 13 04 07 02 05 19 08 20 16 18 01 06 15 14 11 17 09 03 10,7
+#design: 0,0,8,8,wordC,0,102000,6000,01 02 09 06 16 10 07 12 13 08 03 17 04 19 15 11 14 05 20 18,8
+#design: 0,0,9,9,face,0,114000,6000,20 08 01 12 02 13 11 09 10 03 19 17 18 04 14 15 07 05 16 06,9
+#design: 0,0,10,10,wordEF,1,126000,6000,11 04 02 08 03 19 13 00 05 09 01 18 20 10 12 14 07 17 06 16,10
+#design: 0,0,11,11,emoji,0,138000,6000,05 09 03 18 13 20 11 12 02 15 04 19 06 16 08 01 07 10 14 17,11
+#design: 0,0,12,12,wordEF,1,150000,6000,19 18 09 05 04 01 02 13 08 11 15 12 16 10 07 06 20 14 00 17,12
+#design: 0,0,13,13,Mu,1,162000,6000,18 16 19 11 06 09 01 02 17 03 00 12 14 10 20 13 08 04 07 05,13
+#design: 0,0,14,14,emoji,0,174000,6000,01 11 13 18 03 08 19 20 10 15 02 09 05 04 17 06 07 14 16 12,14
+#design: 0,0,15,15,wordEF,0,186000,6000,07 14 16 03 13 06 08 18 04 17 10 19 09 15 20 02 05 12 01 11,15
+#design: 0,0,16,16,face,0,198000,6000,20 11 19 05 15 14 06 18 12 10 17 04 07 03 13 09 01 16 02 08,16
+#design: 0,0,17,17,wordC,1,210000,6000,15 13 20 16 14 17 00 08 01 06 02 18 11 05 10 12 19 04 07 03,17
+105387,design,logged,
+105387,Experiment,started
+105397,Stimulus,presented,3
+126247,Keyboard,received,116,wait
+126274,Picture,loaded,visual_categories\stimblank.png
+126276,Stimulus,presented,0
+126278,Stimulus,presented,1
+126281,Picture,loaded,visual_categories\stimblank.png
+126282,Stimulus,presented,0
+126295,Stimulus,presented,1
+130543,Experiment,paused
+130548,Stimulus,presented,107
+131264,Keyboard,received,y,wait_char
+131264,Experiment,ended
+131286,Stimulus,presented,107

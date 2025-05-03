@@ -15,6 +15,13 @@ from expyriment.misc import Clock
 
 from queue import PriorityQueue
 
+
+
+
+# hard-coded constants (which cannot be modified by optional command line arguments)
+N_T_WAIT = 3 # number of TTL to wait for at the start
+MRI_SYNC_KEY = expyriment.misc.constants.K_t
+
 # constants (which can be modified by optional command line arguments)
 WORD_DURATION = 450
 WORD_ISI = 200
@@ -31,7 +38,7 @@ WINDOW_SIZE = (1280, 1028)
 
 # Ali Added - only allow 'y' key presses
 KEY_TRANSLATION = {
-    expyriment.misc.constants.K_y: 'y' # Changed to only allow 'y' (left hand button presses in fMRI scanner)
+    expyriment.misc.constants.K_f: 'f' # Changed to only allow 'f' (right hand button presses in fMRI scanner)
 }
 AUTHORIZED_KEYS = KEY_TRANSLATION.keys()
 
@@ -225,6 +232,13 @@ for listfile in csv_files:
 
 exp.add_data_variable_names([ 'condition', 'time', 'stype', 'id', 'target_time'])
 
+# Function to wait for the scanner sync signal
+def wait_for_mri_sync(n_t_wait):
+
+    t_signal_count = 0
+    while t_signal_count < n_t_wait :
+        kb.wait(MRI_SYNC_KEY)
+        t_signal_count += 1
 #%
 expyriment.control.start()
 
@@ -235,7 +249,8 @@ if not (splash_screen is None):
     kb.wait_char(' ')
 
 wm.present()
-kb.wait_char('t')  # wait for scanner TTL
+wait_for_mri_sync(N_T_WAIT)  # wait for scanner TTL
+
 fs.present()  # clear screen, presenting fixation cross
 
 a = Clock()
@@ -252,6 +267,7 @@ while not(events.empty()):
     stim.present()
     exp.data.add(['{}'.format(cond), a.time, '{},{},{}'.format(stype, id, onset)])
 
+
     # Check for key presses
     k = kb.check(keys=AUTHORIZED_KEYS)
     if k is not None:
@@ -259,8 +275,8 @@ while not(events.empty()):
         
     # Present the fixation cross
     if stype == 'blank':
-        fs.present()
-    
+        fs.present() 
+        
 if TOTAL_EXPE_DURATION != -1:
     while a.time < TOTAL_EXPE_DURATION:
         kb.process_control_keys()

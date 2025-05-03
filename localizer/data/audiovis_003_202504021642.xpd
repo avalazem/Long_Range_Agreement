@@ -1,0 +1,21 @@
+#Expyriment 0.11.dev5 (Python 3.11.9), .xpd-file, coding: cp1252
+#date: Wed Apr 02 2025 16:42:24
+#--EXPERIMENT INFO
+#e mainfile: audiovis.py
+#e sha1: 6ecfc1
+#e modules: 
+#e Experiment: HiRes Experiment
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 3
+subject_id,condition,time,stype,id,target_time
+3,,1990,"sound,music07.wav,2000"
+3,,2990,"sound,music09.wav,3000"
+3,,3990,"sound,music02.wav,4000"
+3,,4990,"sound,music10.wav,5000"
+3,,5990,"sound,music06.wav,6000"
+3,,6990,"sound,music03.wav,7000"
+3,,7990,"sound,music08.wav,8000"
+3,,8990,"sound,music04.wav,9000"
+3,,9990,"sound,music01.wav,10000"
+3,,10990,"sound,music05.wav,11000"

@@ -1,0 +1,13 @@
+#Expyriment 0.11.dev5 (Python 3.11.9), .xpd-file, coding: cp1252
+#date: Wed Apr 02 2025 18:42:23
+#--EXPERIMENT INFO
+#e mainfile: audiovis.py
+#e sha1: ef5d1f
+#e modules: 
+#e Experiment: HiRes Experiment
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 5
+subject_id,condition,time,stype,id,target_time
+5,,1992,"picture,finger.png,2000"
+5,,5018,"blank,blank,5000"
