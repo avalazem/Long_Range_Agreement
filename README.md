@@ -2,7 +2,7 @@ LONG-RANGE AGREEMENT
 # Running the Experiment
 
 # 1. Training
-# 264 s (4.4 min) total - 132 s each. 10 trials: 2 blocks of 5 trials/modality
+# 132 s each run, 264 s (4.4 min) total - 10 trials: 2 blocks of 5 trials/modality
 
 # Run Instructions:
 
