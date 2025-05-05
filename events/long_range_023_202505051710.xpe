@@ -1,0 +1,23 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Mon May 05 2025 17:10:50
+#sha1: 42df5b
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-24-generic', version='#24-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:13:56 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+520,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+527,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+531,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+537,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+606,stdout,received,'Total number of trials: 10'
+606,stdout,received,'Expected Total duration: 138.00 s'
+1109,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 1)
+#design: block_cnt,block_id,trial_cnt,trial_id
+1109,design,logged,
+1109,Experiment,started
+1111,stderr,received,'Traceback (most recent call last):'
+1111,stderr,received,'  File "/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Code/long_range.py", line 294, in <module>'
+1111,stderr,received,'    img_w, img_h = instruction_image.size # Get original size'
+1111,stderr,received,'                   ^^^^^^^^^^^^^^^^^^^^^^'
+1111,stderr,received,"AttributeError: 'Picture' object has no attribute 'size'"

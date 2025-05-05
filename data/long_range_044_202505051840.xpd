@@ -1,0 +1,21 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Mon May 05 2025 18:40:54
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: a355c0
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub 01 Run 2)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 44
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
+44,1,Ces coiffeurs que les notaires attendent savent conduire.,lr_obj,visual,TIMEOUT,-999
+44,2,Un boucher loin du champion émeut le plombier.,lr_pp,visual,TIMEOUT,-999
+44,3,Près du champion un chef suit ce médecin.,sr_pp,visual,TIMEOUT,-999
+44,4,Proche des dentistes des malades hait les prêtres.,sr_pp,visual,TIMEOUT,-999
+44,5,Ce chef que le coiffeur attendent répond aussitôt.,lr_obj,visual,TIMEOUT,-999
+44,6,Ces facteurs que le gérant suit doivent manger.,lr_obj,auditory,TIMEOUT,-999
+44,7,Ces libraires près du prêtre sert des vendeurs.,lr_pp,auditory,TIMEOUT,-999
+44,8,Des malades loin des matelots haïssent des prêtres.,lr_pp,auditory,TIMEOUT,-999
+44,9,Ces bouchers que ce malade haïssent savent conduire.,lr_obj,auditory,TIMEOUT,-999
+44,10,Le boucher que ces médecins craignent peint rarement.,lr_obj,auditory,TIMEOUT,-999

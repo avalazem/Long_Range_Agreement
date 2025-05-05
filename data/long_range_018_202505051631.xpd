@@ -1,0 +1,18 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Mon May 05 2025 16:31:16
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: fcd5c0
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub 01 Run 1)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 18
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
+18,1,Proche des malades ces marins punit des peintres.,sr_pp,auditory,TIMEOUT,-999
+18,2,Des champions auprès du marin suit des serveurs.,lr_pp,auditory,TIMEOUT,-999
+18,3,Ces matelots que ce peintre endort savent cuisiner.,lr_obj,auditory,TIMEOUT,-999
+18,4,Près du malade un patient servent le prêtre.,sr_pp,auditory,TIMEOUT,-999
+18,5,Ce boucher que les plombiers attendent écrit rarement.,lr_obj,auditory,TIMEOUT,-999
+18,6,Le gardien que ce marchand sert repart demain.,lr_obj,visual,TIMEOUT,-999
+18,7,Loin du chanteur le malade suit ce patient.,sr_pp,visual,TIMEOUT,-999

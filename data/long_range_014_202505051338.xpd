@@ -1,0 +1,13 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Mon May 05 2025 13:38:30
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: 57fc7a
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub train Run 1)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 14
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
+14,1,Ces gardiens auprès des malades défend ces marchands.,lr_pp,auditory,left (FALSE),1238
+14,2,Un gérant près des peintres endorment le plombier.,lr_pp,auditory,TIMEOUT,-999

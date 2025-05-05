@@ -1,0 +1,51 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Sun May 04 2025 21:19:13
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: 024d87
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub 01 Run 1)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 9
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
+9,1,Les champions que ces malades élit mentent rarement.,lr_obj,visual,TIMEOUT,-999
+9,2,Loin du boucher ce gardien craignent ce notaire.,sr_pp,visual,TIMEOUT,-999
+9,3,Un facteur auprès des médecins punit un pompier.,lr_pp,visual,TIMEOUT,-999
+9,4,Le facteur que les marins élit vomit partout.,lr_obj,visual,TIMEOUT,-999
+9,5,Des chefs auprès du dentiste plaint des soldats.,lr_pp,visual,TIMEOUT,-999
+9,6,Près du juge un marin punit le vendeur.,sr_pp,visual,TIMEOUT,-999
+9,7,Ce comédien proche des facteurs servent ce notaire.,lr_pp,visual,TIMEOUT,-999
+9,8,Un médecin auprès du patient séduit ce peintre.,lr_pp,visual,TIMEOUT,-999
+9,9,Ces bouchers auprès des marchands punit les peintres.,lr_pp,visual,TIMEOUT,-999
+9,10,Un malade que ce notaire suit ment souvent.,lr_obj,visual,TIMEOUT,-999
+9,11,Les facteurs que le marin séduit vomissent parfois.,lr_obj,visual,TIMEOUT,-999
+9,12,Ce juge que le marchand attendent repart dehors.,lr_obj,visual,TIMEOUT,-999
+9,13,Ces chefs loin du gardien décrivent des patients.,lr_pp,visual,TIMEOUT,-999
+9,14,Le boucher près du matelot émeuvent le serveur.,lr_pp,visual,TIMEOUT,-999
+9,15,Auprès des comédiens des dentistes sert des matelots.,sr_pp,visual,TIMEOUT,-999
+9,16,Les bouchers loin des champions punissent les prêtres.,lr_pp,visual,TIMEOUT,-999
+9,17,Ces dentistes que les facteurs reçoivent écrivent parfois.,lr_obj,visual,TIMEOUT,-999
+9,18,Le chef que ces danseurs reçoivent répond aussitôt.,lr_obj,visual,TIMEOUT,-999
+9,19,Les gardiens que ce matelot suivent écrivent toujours.,lr_obj,visual,TIMEOUT,-999
+9,20,Proche des médecins les plombiers attendent ces pompiers.,sr_pp,visual,TIMEOUT,-999
+9,21,Auprès du gérant le plombier défendent un prêtre.,sr_pp,auditory,TIMEOUT,-999
+9,22,Le chanteur que ce malade défend doit partir.,lr_obj,auditory,TIMEOUT,-999
+9,23,Ce libraire proche des patients suit ce prêtre.,lr_pp,auditory,TIMEOUT,-999
+9,24,Un chanteur que le libraire servent doit manger.,lr_obj,auditory,TIMEOUT,-999
+9,25,Les marins loin du soldat défend des vendeurs.,lr_pp,auditory,TIMEOUT,-999
+9,26,Un chanteur près du dentiste attend le vendeur.,lr_pp,auditory,TIMEOUT,-999
+9,27,Les comédiens proche des libraires plaint les matelots.,lr_pp,auditory,TIMEOUT,-999
+9,28,Un client que ces pompiers émeut répond aussitôt.,lr_obj,auditory,TIMEOUT,-999
+9,29,Les comédiens que le serveur attend répondent aussitôt.,lr_obj,auditory,TIMEOUT,-999
+9,30,Les gardiens que ce libraire haïssent savent danser.,lr_obj,auditory,TIMEOUT,-999
+9,31,Les chanteurs que les facteurs suit savent nager.,lr_obj,auditory,TIMEOUT,-999
+9,32,Le gardien que les marins décrivent répond lentement.,lr_obj,auditory,TIMEOUT,-999
+9,33,Ce gardien loin du patient reçoivent le soldat.,lr_pp,auditory,TIMEOUT,-999
+9,34,Le boucher loin des dentistes émeuvent ce malade.,lr_pp,auditory,TIMEOUT,-999
+9,35,Des facteurs proche des prêtres attendent les vendeurs.,lr_pp,auditory,TIMEOUT,-999
+9,36,Proche du dentiste un gérant bénit le matelot.,sr_pp,auditory,TIMEOUT,-999
+9,37,Proche des chanteurs les danseurs bénissent les libraires.,sr_pp,auditory,TIMEOUT,-999
+9,38,Les comédiens que ces danseurs entendent mentent toujours.,lr_obj,auditory,TIMEOUT,-999
+9,39,Proche des bouchers ces dentistes suit des serveurs.,sr_pp,auditory,TIMEOUT,-999
+9,40,Ces champions proche du marin séduisent des soldats.,lr_pp,auditory,TIMEOUT,-999

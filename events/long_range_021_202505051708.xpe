@@ -1,0 +1,39 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Mon May 05 2025 17:08:59
+#sha1: 9d68ed
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-24-generic', version='#24-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:13:56 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+473,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+480,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+484,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+489,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+556,stdout,received,'Total number of trials: 10'
+556,stdout,received,'Expected Total duration: 138.00 s'
+758,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 1)
+#design: block_cnt,block_id,trial_cnt,trial_id
+758,design,logged,
+758,Experiment,started
+773,Stimulus,presented,2
+1139,Keyboard,received,32,wait
+1164,Stimulus,presented,58
+1614,Keyboard,received,116,wait
+1762,Keyboard,received,116,wait
+1892,Keyboard,received,116,wait
+1917,Stimulus,presented,0
+3945,Stimulus,presented,3
+4953,Stimulus,presented,0
+4953,stdout,received,'Starting main trial loop...'
+9846,stdout,received,'Trial 1: Target: 3000.00 Actual: 7954.00 Delta: 4954.00 !!!'
+9870,Stimulus,presented,0
+9870,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_1.wav'
+13898,Stimulus,presented,0
+14922,Stimulus,presented,0
+14922,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_1_probe.wav'
+16294,Experiment,paused
+16321,Stimulus,presented,59
+16614,Keyboard,received,y,wait_char
+16614,Experiment,ended
+16641,Stimulus,presented,59
