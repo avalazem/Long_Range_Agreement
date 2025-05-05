@@ -13,7 +13,7 @@ SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_2
 
 
 # 2. Main-Exp
-# 536 s (~9 min) each run (53.6 min total) - 2 s before first block, 2 blocks of 20 trials/modality - 13 sec each, 10 s after final block. 2 sec modality cue before each block.
+# 536 s (~9 min) each run, 53.6 min total - 2 s before first block, 2 blocks of 20 trials/modality - 13 sec each, 10 s after final block. 2 sec modality cue before each block.
 # Run Instructions: (Specified AUDIODRIVER for my PC - configure based on stim pc)
 cd main-exp
 
