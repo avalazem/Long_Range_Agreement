@@ -42,7 +42,7 @@ CUE_TO_STIM_WAIT = 1000          # ms, Duration of fixation cross wait AFTER cue
 PROBE_DURATION = 2000           # ms, Duration of the probe (based on 'Neural Populations' paper)
 KEY_WAIT_DURATION = PROBE_DURATION # ms, Currently waits for key press only during probe presentation but can tweak this by defining this 
 AUDIO_DURATION = 4000           # ms, Duration of the audio stimulus (like params.audio_duration)
-REST_DURATIONS = [4500, 5000, 5500, 6000, 6500] # ms, Base rest durations to choose from (average is 6000)
+REST_DURATIONS = [5000, 5500, 6000, 6500, 7000] # ms, Base rest durations to choose from (average is 6000)
 # ----------------------------------------
 
 # Check for correct usage
