@@ -1,0 +1,12 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Mon May 05 2025 17:59:12
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: d524b4
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub 01 Run 2)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 34
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
+34,1,Ces coiffeurs que les notaires attendent savent conduire.,lr_obj,visual,TIMEOUT,-999

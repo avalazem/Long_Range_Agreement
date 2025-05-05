@@ -1,0 +1,21 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Sun May 04 2025 20:49:24
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: 08c350
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub train Run 2)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 4
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
+4,1,Ces champions que le serveur plaignent repartent demain.,lr_obj,visual,TIMEOUT,-999
+4,2,Le gérant auprès des libraires plaint ce peintre.,lr_pp,visual,TIMEOUT,-999
+4,3,Près du comédien ce marin suivent un serveur.,sr_pp,visual,TIMEOUT,-999
+4,4,Un gérant près du matelot sert ce patient.,lr_pp,visual,TIMEOUT,-999
+4,5,Un client proche du malade entendent un soldat.,lr_pp,visual,TIMEOUT,-999
+4,6,Les libraires que le médecin suit écrivent toujours.,lr_obj,auditory,TIMEOUT,-999
+4,7,Auprès des chanteurs ces comédiens sert les malades.,sr_pp,auditory,TIMEOUT,-999
+4,8,Ce champion que les gardiens craint ment toujours.,lr_obj,auditory,TIMEOUT,-999
+4,9,Ces chanteurs que ces malades suivent écrivent rarement.,lr_obj,auditory,TIMEOUT,-999
+4,10,Des champions loin des facteurs suit ces marchands.,lr_pp,auditory,TIMEOUT,-999

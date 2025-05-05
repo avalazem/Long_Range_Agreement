@@ -1,0 +1,34 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Mon May 05 2025 17:25:56
+#sha1: 38dd38
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-24-generic', version='#24-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:13:56 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+425,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+494,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+498,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+502,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+507,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+570,stdout,received,'Total number of trials: 10'
+570,stdout,received,'Expected Total duration (from start): 137.50 s'
+1104,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 1)
+#design: block_cnt,block_id,trial_cnt,trial_id
+1104,design,logged,
+1104,Experiment,started
+1118,Stimulus,presented,2
+21694,Keyboard,received,32,wait
+21723,Stimulus,presented,59
+22733,Keyboard,received,116,wait
+22951,Keyboard,received,116,wait
+23189,Keyboard,received,116,wait
+23213,Stimulus,presented,0
+25238,Stimulus,presented,3
+25762,Stimulus,presented,0
+25762,stdout,received,'Starting main trial loop...'
+25763,stderr,received,'Traceback (most recent call last):'
+25763,stderr,received,'  File "/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Code/long_range.py", line 356, in <module>'
+25763,stderr,received,'    exp.clock.wait_until(target_time_absolute, process_control_events=True)'
+25763,stderr,received,'    ^^^^^^^^^^^^^^^^^^^^'
+25763,stderr,received,"AttributeError: 'Clock' object has no attribute 'wait_until'"

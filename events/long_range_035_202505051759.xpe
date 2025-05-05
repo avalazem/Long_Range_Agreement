@@ -1,0 +1,178 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Mon May 05 2025 17:59:46
+#sha1: d524b4
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-24-generic', version='#24-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:13:56 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+465,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+499,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+504,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+509,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+514,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+580,stdout,received,'Total number of trials: 10'
+580,stdout,received,'Expected Total duration: 137.00 s'
+1251,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 2)
+#design: block_cnt,block_id,trial_cnt,trial_id
+1251,design,logged,
+1251,Experiment,started
+1265,Stimulus,presented,2
+2134,Keyboard,received,32,wait
+2159,Stimulus,presented,59
+2492,Keyboard,received,116,wait
+2668,Keyboard,received,116,wait
+2825,Keyboard,received,116,wait
+2828,Stimulus,presented,0
+4828,stdout,received,'Starting main trial loop...'
+4828,stdout,received,'Trial 1: Target: 2000.00 Actual: 2003.00 Delta: 3.00'
+4853,Stimulus,presented,7
+5120,Stimulus,presented,1
+5393,Stimulus,presented,8
+5666,Stimulus,presented,1
+5940,Stimulus,presented,9
+6214,Stimulus,presented,1
+6488,Stimulus,presented,10
+6762,Stimulus,presented,1
+7036,Stimulus,presented,11
+7310,Stimulus,presented,1
+7584,Stimulus,presented,12
+7858,Stimulus,presented,1
+8132,Stimulus,presented,13
+8406,Stimulus,presented,1
+8680,Stimulus,presented,14
+8954,Stimulus,presented,1
+9228,Stimulus,presented,4
+10254,Stimulus,presented,60
+12254,Keyboard,received,None,wait
+12279,Stimulus,presented,0
+16825,stdout,received,'Trial 2: Target: 14000.00 Actual: 14000.00 Delta: 0.00'
+16850,Stimulus,presented,15
+17124,Stimulus,presented,1
+17398,Stimulus,presented,16
+17672,Stimulus,presented,1
+17946,Stimulus,presented,17
+18220,Stimulus,presented,1
+18494,Stimulus,presented,18
+18768,Stimulus,presented,1
+19042,Stimulus,presented,19
+19316,Stimulus,presented,1
+19590,Stimulus,presented,20
+19864,Stimulus,presented,1
+20138,Stimulus,presented,21
+20412,Stimulus,presented,1
+20686,Stimulus,presented,22
+20960,Stimulus,presented,1
+21234,Stimulus,presented,4
+22259,Stimulus,presented,61
+24259,Keyboard,received,None,wait
+24284,Stimulus,presented,0
+30325,stdout,received,'Trial 3: Target: 27500.00 Actual: 27500.00 Delta: 0.00'
+30350,Stimulus,presented,23
+30624,Stimulus,presented,1
+30898,Stimulus,presented,24
+31172,Stimulus,presented,1
+31455,Stimulus,presented,25
+31721,Stimulus,presented,1
+31989,Stimulus,presented,26
+32255,Stimulus,presented,1
+32522,Stimulus,presented,27
+32789,Stimulus,presented,1
+33056,Stimulus,presented,28
+33322,Stimulus,presented,1
+33589,Stimulus,presented,29
+33855,Stimulus,presented,1
+34122,Stimulus,presented,30
+34389,Stimulus,presented,1
+34655,Stimulus,presented,4
+35672,Stimulus,presented,62
+37672,Keyboard,received,None,wait
+37697,Stimulus,presented,0
+43325,stdout,received,'Trial 4: Target: 40500.00 Actual: 40500.00 Delta: 0.00'
+43350,Stimulus,presented,31
+43623,Stimulus,presented,1
+43897,Stimulus,presented,32
+44171,Stimulus,presented,1
+44445,Stimulus,presented,33
+44719,Stimulus,presented,1
+44993,Stimulus,presented,34
+45267,Stimulus,presented,1
+45541,Stimulus,presented,35
+45815,Stimulus,presented,1
+46089,Stimulus,presented,36
+46363,Stimulus,presented,1
+46637,Stimulus,presented,37
+46911,Stimulus,presented,1
+47185,Stimulus,presented,38
+47459,Stimulus,presented,1
+47733,Stimulus,presented,4
+48759,Stimulus,presented,63
+50759,Keyboard,received,None,wait
+50784,Stimulus,presented,0
+56825,stdout,received,'Trial 5: Target: 54000.00 Actual: 54000.00 Delta: 0.00'
+56849,Stimulus,presented,39
+57122,Stimulus,presented,1
+57396,Stimulus,presented,40
+57670,Stimulus,presented,1
+57944,Stimulus,presented,41
+58218,Stimulus,presented,1
+58492,Stimulus,presented,42
+58766,Stimulus,presented,1
+59040,Stimulus,presented,43
+59314,Stimulus,presented,1
+59588,Stimulus,presented,44
+59862,Stimulus,presented,1
+60135,Stimulus,presented,45
+60410,Stimulus,presented,1
+60684,Stimulus,presented,46
+60958,Stimulus,presented,1
+61232,Stimulus,presented,4
+62257,Stimulus,presented,64
+64257,Keyboard,received,None,wait
+64283,Stimulus,presented,0
+68825,stdout,received,'Trial 6: Target: 66000.00 Actual: 66000.00 Delta: 0.00'
+68850,Stimulus,presented,0
+68850,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_6.wav'
+72876,Stimulus,presented,4
+73900,Stimulus,presented,0
+73900,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_6_probe.wav'
+75900,Keyboard,received,None,wait
+75925,Stimulus,presented,0
+81825,stdout,received,'Trial 7: Target: 79000.00 Actual: 79000.00 Delta: 0.00'
+81849,Stimulus,presented,0
+81849,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_7.wav'
+85874,Stimulus,presented,4
+86898,Stimulus,presented,0
+86898,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_7_probe.wav'
+88898,Keyboard,received,None,wait
+88923,Stimulus,presented,0
+94325,stdout,received,'Trial 8: Target: 91500.00 Actual: 91500.00 Delta: 0.00'
+94350,Stimulus,presented,0
+94350,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_8.wav'
+98374,Stimulus,presented,4
+99398,Stimulus,presented,0
+99398,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_8_probe.wav'
+101398,Keyboard,received,None,wait
+101423,Stimulus,presented,0
+106825,stdout,received,'Trial 9: Target: 104000.00 Actual: 104000.00 Delta: 0.00'
+106849,Stimulus,presented,0
+106849,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_9.wav'
+110875,Stimulus,presented,4
+111899,Stimulus,presented,0
+111899,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_9_probe.wav'
+113899,Keyboard,received,None,wait
+113925,Stimulus,presented,0
+118325,stdout,received,'Trial 10: Target: 115500.00 Actual: 115500.00 Delta: 0.00'
+118350,Stimulus,presented,0
+118350,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_10.wav'
+122375,Stimulus,presented,4
+123399,Stimulus,presented,0
+123399,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_2/wavs/trial_10_probe.wav'
+125399,Keyboard,received,None,wait
+125425,Stimulus,presented,0
+139825,stderr,received,'Traceback (most recent call last):'
+139825,stderr,received,'  File "/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Code/long_range.py", line 607, in <module>'
+139825,stderr,received,'    io.DataFile(filename=log_filename).add(exp.data)'
+139825,stderr,received,'    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+139825,stderr,received,"TypeError: DataFile.__init__() got an unexpected keyword argument 'filename'"
+139825,Data,saved

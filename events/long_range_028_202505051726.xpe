@@ -1,0 +1,53 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Mon May 05 2025 17:26:40
+#sha1: 82aacc
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-24-generic', version='#24-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:13:56 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+427,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+497,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+502,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+506,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+511,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+574,stdout,received,'Total number of trials: 10'
+574,stdout,received,'Expected Total duration (from start): 137.50 s'
+1739,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 1)
+#design: block_cnt,block_id,trial_cnt,trial_id
+1739,design,logged,
+1739,Experiment,started
+1754,Stimulus,presented,2
+2679,Keyboard,received,32,wait
+2684,Stimulus,presented,59
+2959,Keyboard,received,116,wait
+3120,Keyboard,received,116,wait
+3263,Keyboard,received,116,wait
+3288,Stimulus,presented,0
+5313,Stimulus,presented,3
+5837,Stimulus,presented,0
+5837,stdout,received,'Starting main trial loop...'
+11650,stdout,received,'Trial 1: TargetRel: 0.00 ActualRel: 5837.00 Delta: 5837.00 !!!'
+11674,Stimulus,presented,0
+11674,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_1.wav'
+15701,Stimulus,presented,4
+16725,Stimulus,presented,0
+16725,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_1_probe.wav'
+18725,Keyboard,received,None,wait
+18751,Stimulus,presented,0
+18751,stdout,received,'Warning: Trial 1 overran expected end time. Setting ITI wait to 0.'
+36064,stdout,received,'Trial 2: TargetRel: 11500.00 ActualRel: 30251.00 Delta: 18751.00 !!!'
+36088,Stimulus,presented,0
+36088,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_2.wav'
+40114,Stimulus,presented,4
+41138,Stimulus,presented,0
+41138,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_2_probe.wav'
+43138,Keyboard,received,None,wait
+43163,Stimulus,presented,0
+43163,stdout,received,'Warning: Trial 2 overran expected end time. Setting ITI wait to 0.'
+52116,Experiment,paused
+52145,Stimulus,presented,60
+53393,Keyboard,received,y,wait_char
+53393,Experiment,ended
+53394,Data,saved
+53420,Stimulus,presented,60
