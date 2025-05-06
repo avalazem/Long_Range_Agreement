@@ -24,7 +24,7 @@ INITIAL_WAIT = 2000  # ms, Wait time after instructions before first trigger/tri
 FINAL_WAIT = 10000   # ms, Wait time at the end of the experiment
 TEXT_SIZE = 50
 TEXT_FONT =  str(script_dir / 'Arial.ttf')  # Font for sentence presentation
-PROBE_SIZE = 70
+PROBE_SIZE = 50
 PROBE_FONT = str(script_dir / 'Times_New_Roman_Bold.ttf') # Font for probe presentation
 LEFT_HAND_KEY =  misc.constants.K_y # Key to press after sentence presentation (Use constant)
 RIGHT_HAND_KEY = misc.constants.K_f # "                                                     "
@@ -38,7 +38,7 @@ STIMULUS_ONTIME = 250           # ms, Duration each word is shown (visual) (like
 STIMULUS_ITI = 250              # ms, Duration of the inter-stimulus interval (like params.stimulus_iti)
 SOA_PROBE = 1000                # ms, Fixation duration AFTER sentence BEFORE probe for both modalities (added to last ITI for integer reasons...)
 CUE_DURATION = 1000             # ms, Duration of the modality cues
-CUE_TO_STIM_WAIT = 1000          # ms, Duration of fixation cross wait AFTER cue BEFORE stimulus
+CUE_TO_STIM_WAIT = 2000         # ms, Duration of fixation cross wait AFTER cue BEFORE stimulus
 PROBE_DURATION = 2000           # ms, Duration of the probe (based on 'Neural Populations' paper)
 KEY_WAIT_DURATION = PROBE_DURATION # ms, Currently waits for key press only during probe presentation but can tweak this by defining this 
 AUDIO_DURATION = 4000           # ms, Duration of the audio stimulus (like params.audio_duration)
@@ -173,7 +173,7 @@ instructions = stimuli.Picture(str(instruction_image_path))
 instructions.scale_to_fullscreen()
 instructions.preload()
 
-# Preload BOTH modality cues
+# Preload modality cues
 visual_cue_path = Path(image_dir) / "visual_cue.png"
 auditory_cue_path = Path(image_dir) / "auditory_cue.png"
 visual_cue = stimuli.Picture(str(visual_cue_path))

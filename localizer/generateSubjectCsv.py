@@ -50,7 +50,7 @@ def generateSubjectCsv(fname, ordered_csv_file):
     return subj_df
 
 
-# for SUBJ_ID in range(101):
-#     fname = f"StimuliOrder/sub-{SUBJ_ID:03}_stimuli.csv"
-#     o_fname = "ordered_stimuli.csv"
-#     generateSubjectCsv(fname, o_fname)
+for SUBJ_ID in range(2):
+    fname = f"StimuliOrder/sub-{SUBJ_ID:03}_stimuli.csv"
+    o_fname = "ordered_stimuli.csv"
+    generateSubjectCsv(fname, o_fname)

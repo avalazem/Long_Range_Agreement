@@ -2,7 +2,7 @@ LONG-RANGE AGREEMENT
 # Running the Experiment
 
 # 1. Training
-# 141 s each run, 242 s (~4 min) total - 10 trials: 2 blocks of 5 trials/modality.
+# 143 s each run, 246 s (~4 min) total - 10 trials: 2 blocks of 5 trials/modality.
 # Run 1 is Audio then Visual
 # Run 2 is Visual then Audio
 
@@ -13,7 +13,7 @@ SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_2
 
 
 # 2. Main-Exp
-# 536 s (~9 min) each run, 53.6 min total - 2 s before first block, 2 blocks of 20 trials/modality - 13 sec each, 10 s after final block. 2 sec modality cue before each block.
+# 538 s (~9 min) each run, 53.8 min total - 2 s before first block, 2 blocks of 20 trials/modality - 13 sec each, 10 s after final block. 3 sec modality cue before each block.
 # Run Instructions: (Specified AUDIODRIVER for my PC - configure based on stim pc)
 cd main-exp
 
@@ -33,4 +33,6 @@ cd localizer
 
 
 python runVisualCategory.py --splash visual_categories/Instructions/Instructions.png
-SDL_AUDIODRIVER=alsa python audiovis.py --total-duration 194000 audio_categories/sub1_audio.csv
+SDL_AUDIODRIVER=alsa python audiovis.py --total-duration 194000 audio_categories/sub01_audio.csv
+
+
