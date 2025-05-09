@@ -1,0 +1,14 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Fri May 09 2025 03:23:04
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: 1ddb88
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub train Run 1)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 1
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
+1,1,Proche des malades ces marins punit des peintres.,sr_pp,auditory,TIMEOUT,-999
+1,2,Des champions auprès du marin suit des serveurs.,lr_pp,auditory,TIMEOUT,-999
+1,3,Ces matelots que ce peintre endort savent cuisiner.,lr_obj,auditory,TIMEOUT,-999

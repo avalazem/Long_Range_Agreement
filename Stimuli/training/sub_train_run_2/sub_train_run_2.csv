@@ -1,11 +1,11 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe
-trial_1,GSLS,lr_obj,no,yes,no,,plur,plur,plur,coiffeurs,notaires,attendent,Ces coiffeurs que les notaires attendent savent conduire.,visual,conduire,True
-trial_2,GSLS,lr_pp,no,yes,no,,sing,sing,sing,boucher,champion,émeut,Un boucher loin du champion émeut le plombier.,visual,ce,False
-trial_3,GS,sr_pp,no,yes,no,,sing,sing,sing,champion,chef,suit,Près du champion un chef suit ce médecin.,visual,client,False
-trial_4,GD,sr_pp,yes,yes,yes,6.0,plur,plur,sing,dentistes,malades,hait,Proche des dentistes des malades hait les prêtres.,visual,malades,True
-trial_5,GDLD,lr_obj,yes,yes,yes,6.0,sing,sing,plur,chef,coiffeur,attendent,Ce chef que le coiffeur attendent répond aussitôt.,visual,attendent,True
-trial_6,GDLS,lr_obj,no,no,yes,,plur,sing,sing,facteurs,gérant,suit,Ces facteurs que le gérant suit doivent manger.,auditory,le,True
-trial_7,GDLS,lr_pp,yes,no,no,6.0,plur,sing,sing,libraires,prêtre,sert,Ces libraires près du prêtre sert des vendeurs.,auditory,les,False
-trial_8,GSLS,lr_pp,no,yes,no,,plur,plur,plur,malades,matelots,haïssent,Des malades loin des matelots haïssent des prêtres.,auditory,ces,False
-trial_9,GSLD,lr_obj,yes,no,no,6.0,plur,sing,plur,bouchers,malade,haïssent,Ces bouchers que ce malade haïssent savent conduire.,auditory,serveur,False
-trial_10,GDLS,lr_obj,no,no,yes,,sing,plur,plur,boucher,médecins,craignent,Le boucher que ces médecins craignent peint rarement.,auditory,rarement,True
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial_1,GSLS,lr_obj,no,yes,no,,plur,plur,plur,coiffeurs,notaires,attendent,Ces coiffeurs que les notaires attendent savent conduire.,visual,conduire,True,6.5
+trial_2,GSLS,lr_pp,no,yes,no,,sing,sing,sing,boucher,champion,émeut,Un boucher loin du champion émeut le plombier.,visual,ce,False,5.5
+trial_3,GS,sr_pp,no,yes,no,,sing,sing,sing,champion,chef,suit,Près du champion un chef suit ce médecin.,visual,client,False,6.0
+trial_4,GD,sr_pp,yes,yes,yes,6.0,plur,plur,sing,dentistes,malades,hait,Proche des dentistes des malades hait les prêtres.,visual,malades,True,5.5
+trial_5,GDLD,lr_obj,yes,yes,yes,6.0,sing,sing,plur,chef,coiffeur,attendent,Ce chef que le coiffeur attendent répond aussitôt.,visual,attendent,True,7.0
+trial_6,GDLS,lr_obj,no,no,yes,,plur,sing,sing,facteurs,gérant,suit,Ces facteurs que le gérant suit doivent manger.,auditory,le,True,5.0
+trial_7,GDLS,lr_pp,yes,no,no,6.0,plur,sing,sing,libraires,prêtre,sert,Ces libraires près du prêtre sert des vendeurs.,auditory,les,False,5.0
+trial_8,GSLS,lr_pp,no,yes,no,,plur,plur,plur,malades,matelots,haïssent,Des malades loin des matelots haïssent des prêtres.,auditory,ces,False.6.5
+trial_9,GSLD,lr_obj,yes,no,no,6.0,plur,sing,plur,bouchers,malade,haïssent,Ces bouchers que ce malade haïssent savent conduire.,auditory,serveur,False,7.0
+trial_10,GDLS,lr_obj,no,no,yes,,sing,plur,plur,boucher,médecins,craignent,Le boucher que ces médecins craignent peint rarement.,auditory,rarement,True,6.0

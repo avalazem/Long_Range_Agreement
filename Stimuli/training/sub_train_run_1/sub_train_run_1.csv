@@ -1,11 +1,11 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe
-trial_1,GD,sr_pp,yes,yes,yes,6.0,plur,plur,sing,malades,marins,punit,Proche des malades ces marins punit des peintres.,auditory,matelots,False
-trial_2,GDLS,lr_pp,yes,no,no,6.0,plur,sing,sing,champions,marin,suit,Des champions auprès du marin suit des serveurs.,auditory,près,False
-trial_3,GDLS,lr_obj,no,no,yes,,plur,sing,sing,matelots,peintre,endort,Ces matelots que ce peintre endort savent cuisiner.,auditory,libraires,False
-trial_4,GD,sr_pp,yes,yes,yes,6.0,sing,sing,plur,malade,patient,servent,Près du malade un patient servent le prêtre.,auditory,boucher,False
-trial_5,GDLS,lr_obj,no,no,yes,,sing,plur,plur,boucher,plombiers,attendent,Ce boucher que les plombiers attendent écrit rarement.,auditory,que,True
-trial_6,GSLS,lr_obj,no,yes,no,,sing,sing,sing,gardien,marchand,sert,Le gardien que ce marchand sert repart demain.,visual,Le,True
-trial_7,GS,sr_pp,no,yes,no,,sing,sing,sing,chanteur,malade,suit,Loin du chanteur le malade suit ce patient.,visual,champion,False
-trial_8,GSLS,lr_obj,no,yes,no,,plur,plur,plur,champions,facteurs,séduisent,Les champions que ces facteurs séduisent veulent dormir.,visual,veulent,True
-trial_9,GDLD,lr_pp,yes,yes,yes,6.0,plur,plur,sing,champions,clients,craint,Les champions loin des clients craint des vendeurs.,visual,libraires,False
-trial_10,GSLD,lr_pp,no,no,yes,,plur,sing,plur,bouchers,malade,bénissent,Les bouchers près du malade bénissent les matelots.,visual,bouchers,True
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial_1,GD,sr_pp,yes,yes,yes,6.0,plur,plur,sing,malades,marins,punit,Proche des malades ces marins punit des peintres.,auditory,matelots,False,5.0
+trial_2,GDLS,lr_pp,yes,no,no,6.0,plur,sing,sing,champions,marin,suit,Des champions auprès du marin suit des serveurs.,auditory,près,False,5.5
+trial_3,GDLS,lr_obj,no,no,yes,,plur,sing,sing,matelots,peintre,endort,Ces matelots que ce peintre endort savent cuisiner.,auditory,libraires,False,5.5
+trial_4,GD,sr_pp,yes,yes,yes,6.0,sing,sing,plur,malade,patient,servent,Près du malade un patient servent le prêtre.,auditory,boucher,False,6.5
+trial_5,GDLS,lr_obj,no,no,yes,,sing,plur,plur,boucher,plombiers,attendent,Ce boucher que les plombiers attendent écrit rarement.,auditory,que,True,7.0
+trial_6,GSLS,lr_obj,no,yes,no,,sing,sing,sing,gardien,marchand,sert,Le gardien que ce marchand sert repart demain.,visual,Le,True,5.0
+trial_7,GS,sr_pp,no,yes,no,,sing,sing,sing,chanteur,malade,suit,Loin du chanteur le malade suit ce patient.,visual,champion,False,7.0
+trial_8,GSLS,lr_obj,no,yes,no,,plur,plur,plur,champions,facteurs,séduisent,Les champions que ces facteurs séduisent veulent dormir.,visual,veulent,True,6.5
+trial_9,GDLD,lr_pp,yes,yes,yes,6.0,plur,plur,sing,champions,clients,craint,Les champions loin des clients craint des vendeurs.,visual,libraires,False,6.0
+trial_10,GSLD,lr_pp,no,no,yes,,plur,sing,plur,bouchers,malade,bénissent,Les bouchers près du malade bénissent les matelots.,visual,bouchers,True,6.0

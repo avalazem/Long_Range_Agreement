@@ -1,0 +1,57 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Fri May 09 2025 03:46:43
+#sha1: a88b46
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-24-generic', version='#24-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 14 18:13:56 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+374,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+406,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+411,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+416,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+421,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+425,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+430,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+607,stdout,received,'Total number of trials: 40'
+607,stdout,received,'Expected Total duration: 538.00 s'
+2053,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 2)
+#design: block_cnt,block_id,trial_cnt,trial_id
+2053,design,logged,
+2053,Experiment,started
+2068,Stimulus,presented,2
+2556,Keyboard,received,32,wait
+2577,Stimulus,presented,210
+3446,Keyboard,received,116,wait
+3620,Keyboard,received,116,wait
+3798,Keyboard,received,116,wait
+3822,Stimulus,presented,0
+5822,stdout,received,'Starting main trial loop...'
+5822,stdout,received,'Trial 1 Target: 2000.00 Actual: 2024.00 Delta: 24.00 !!!'
+5822,stdout,received,'Presenting cue for modality: visual'
+5847,Stimulus,presented,3
+6871,Stimulus,presented,0
+8895,Stimulus,presented,8
+9169,Stimulus,presented,1
+9442,Stimulus,presented,9
+9711,Stimulus,presented,1
+9972,Stimulus,presented,10
+10235,Stimulus,presented,1
+10492,Stimulus,presented,11
+10750,Stimulus,presented,1
+11007,Stimulus,presented,12
+11264,Stimulus,presented,1
+11522,Stimulus,presented,13
+11780,Stimulus,presented,1
+12054,Stimulus,presented,14
+12327,Stimulus,presented,1
+12600,Stimulus,presented,15
+12873,Stimulus,presented,1
+13147,Stimulus,presented,5
+14172,Stimulus,presented,211
+14620,Keyboard,received,121,check
+14620,stderr,received,'Traceback (most recent call last):'
+14620,stderr,received,'  File "/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Code/long_range.py", line 506, in <module>'
+14621,stderr,received,'    keys = key_event[0] # key_code'
+14621,stderr,received,'           ~~~~~~~~~^^^'
+14621,stderr,received,"TypeError: 'int' object is not subscriptable"

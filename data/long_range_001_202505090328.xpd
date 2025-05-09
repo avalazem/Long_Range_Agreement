@@ -1,0 +1,13 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Fri May 09 2025 03:28:48
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: 04a1a5
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub 01 Run 2)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 1
+subject_id,TrialNumber,Sentence,Structure,Modality,KEY,RT_ms
+1,1,Un champion loin des plombiers entendent ce prêtre.,lr_pp,visual,TIMEOUT,-999
+1,2,Proche des malades des marchands plaignent ces notaires.,sr_pp,visual,TIMEOUT,-999

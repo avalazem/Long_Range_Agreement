@@ -42,7 +42,6 @@ CUE_TO_STIM_WAIT = 2000         # ms, Duration of fixation cross wait AFTER cue 
 PROBE_DURATION = 2000           # ms, Duration of the probe (based on 'Neural Populations' paper)
 KEY_WAIT_DURATION = PROBE_DURATION # ms, Currently waits for key press only during probe presentation but can tweak this by defining this 
 AUDIO_DURATION = 4000           # ms, Duration of the audio stimulus (like params.audio_duration)
-REST_DURATIONS = [5000, 5500, 6000, 6500, 7000] # ms, Base rest durations to choose from (average is 6000)
 # ----------------------------------------
 
 # Check for correct usage
@@ -138,17 +137,9 @@ except Exception as e:
     print(f"Error checking stimulus CSV columns: {e}")
     sys.exit(1)
 
-# --- Generate Jittered Rest Times ---
+# Extract Num Trials
 num_trials = len(stim_df)
-num_rest_durations = len(REST_DURATIONS)
-if num_trials % num_rest_durations != 0:
-    print(f"Warning: Number of trials ({num_trials}) is not perfectly divisible by the number of rest durations ({num_rest_durations}). Rest times might not be perfectly balanced.")
-# Create full list of Rest Durations
-num_repeats = num_trials // num_rest_durations
-remainder = num_trials % num_rest_durations
-rest_durations_list = REST_DURATIONS * num_repeats + REST_DURATIONS[:remainder]
-random.shuffle(rest_durations_list) # Shuffle the rest for random presentation order
-# -----------------------------
+
 
 # --- Expyriment Setup ---
 exp = design.Experiment(name=f"Long-Range Agreement - Sub {subject_id} Run {run_number})", text_size=TEXT_SIZE)
@@ -160,7 +151,7 @@ control.initialize(exp)
 # --- Prepare Stimuli Objects ---
 fixation_cross = stimuli.FixCross(size=(50, 50), line_width=4)
 blank_screen = stimuli.BlankScreen()
-ready_text = "Attendez..."
+ready_text = "Waiting for scanner sync (or press \'t\')"
 end_text = f"Fin de cette partie. Merci!"
 
 # --- Preload Static Stimuli ---
@@ -194,13 +185,15 @@ stimuli.TextScreen("Fin", end_text).preload()
 # --- Preload Trial Stimuli ---
 preloaded_stimuli = {} # Dictionary to hold preloaded stimuli for each trial
 preloaded_word_counts = {} # Dictionary to hold word counts for visual trials
+preloaded_trial_durations = {} # Dictionary to hold trial durations
 
 for index, trial_data in stim_df.iterrows():
     # Use 1-based index for trial ID and filename, matching row number
     trial_id_one_based = index + 1
     sentence = trial_data['sentence']
-    current_modality = trial_data['modality'].lower() # Get modality for this specific trial
-
+    current_modality = trial_data['modality'].lower() # Get modality for this specific 
+    
+    # Preload the trial duration (ITI)
     if current_modality == 'visual':
         # ... existing visual preload ...
         sentence_text = sentence.rstrip('.') # Remove trailing period
@@ -260,7 +253,7 @@ for index, trial_data in stim_df.iterrows():
         preloaded_stimuli[trial_id_one_based] = (audio_stim, probe_audio_stim) # Store tuple of preloaded objects (or None)
         preloaded_word_counts[trial_id_one_based] = 0 # Store 0 for auditory trials
 
-# --- Calculate Expected Trial Timings and Total Duration ---
+# --- Calculate Trial Timings and Total Duration ---
 expected_total_duration = INITIAL_WAIT
 target_onset_times = {}
 current_target_onset = INITIAL_WAIT # Target start for the first trial block
@@ -287,10 +280,12 @@ for index, trial_data in stim_df.iterrows():
     else:
         trial_stim_probe_duration = 0 # Should not happen
 
+    preloaded_trial_durations[trial_id_one_based] = trial_data['trial_duration'] * 1000 # Get the trial duration from the CSV
+    
     # Get ITI for this trial (assigned rest duration)
-    current_iti = rest_durations_list[index]
+    current_iti = preloaded_trial_durations[trial_id_one_based]
 
-    # Calculate the start time for the NEXT trial's block
+    # Calculate the start time for the next trial's block
     # Add this trial's cue/fix duration, stim/probe duration, and ITI
     current_target_onset += cue_fix_duration + trial_stim_probe_duration + current_iti
 
@@ -357,7 +352,7 @@ for index, trial_data in stim_df.iterrows():
     # --- Timing Verification (Print AFTER initial wait) --- (Moved up)
     actual_onset = exp.clock.time - start_time # Time block actually starts
     delta = actual_onset - target_onset
-    warn = " !!!" if delta > 100 else "" # Adjusted warning threshold slightly
+    warn = " !!!" if delta > 25 else "" # Adjusted warning threshold slightly
     # Print timing info for the *current* trial block start
     print(f"Trial {trial_id_one_based} Target: {target_onset:.2f} Actual: {actual_onset:.2f} Delta: {delta:.2f}{warn}")
     # ----------------------------------------------------
@@ -402,7 +397,7 @@ for index, trial_data in stim_df.iterrows():
          previous_modality = current_modality # Update modality even if skipped
          # Need to wait for the ITI duration even if skipped
          fixation_cross.present()
-         current_rest = rest_durations_list[index]
+         current_rest = preloaded_trial_durations[index]
          exp.clock.wait(current_rest)
          continue
 
@@ -443,7 +438,7 @@ for index, trial_data in stim_df.iterrows():
             exp.data.add([trial_id_one_based, sentence, structure, current_modality, "NO_SENT_AUDIO", -2]) # Log specific error
             # Go directly to Rest duration for this trial
             blank_screen.present()
-            current_rest = rest_durations_list[index] # Rest still uses 0-based index
+            current_rest = preloaded_trial_durations[index] # Rest still uses 0-based index
             exp.clock.wait(current_rest)
             continue # Skip rest of trial logic
 
@@ -477,7 +472,7 @@ for index, trial_data in stim_df.iterrows():
             exp.data.add([trial_id_one_based, sentence, structure, current_modality, "SENT_AUDIO_ERR", -2])
             # Go directly to Rest duration for this trial
             blank_screen.present()
-            current_rest = rest_durations_list[index] # Rest still uses 0-based index
+            current_rest = preloaded_trial_durations[index] # Rest still uses 0-based index
             exp.clock.wait(current_rest)
             continue # Skip rest of trial logic
 
@@ -497,7 +492,20 @@ for index, trial_data in stim_df.iterrows():
         current_probe = stimuli.TextLine(probe_word, text_size=PROBE_SIZE, text_font=PROBE_FONT)
         current_probe.present() # <-- Present the trial-specific probe
         prompt_onset_time = exp.clock.time
+        keys = None
+        rt = None
+        first_key_press_time = None
+        
+        # Wait for PROBE_DURATION, checking for escape
         keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=PROBE_DURATION, process_control_events=True)
+        
+        if rt is not -999:
+            exp.clock.wait(PROBE_DURATION - rt) # Wait for 1ms to yield CPU
+            
+        if keys == ESCAPE_KEY:
+            control.end(goodbye_text="Experiment aborted.", goodbye_delay=1000)
+            sys.exit()
+            
 
     elif current_modality == 'auditory':
         # --- Auditory Probe ---
@@ -529,16 +537,11 @@ for index, trial_data in stim_df.iterrows():
             logged_key = "NO_PROBE_AUDIO"
             logged_rt = -5 # Indicate missing probe audio file
 
-    # --- Process Response (Common Logic) ---
+    # --- Process Response ---
     # Check for Escape Key during probe wait (applies to both modalities)
     if keys == ESCAPE_KEY:
         control.end(goodbye_text="Experiment aborted by user.", goodbye_delay=1000)
         sys.exit()
-
-    # Ensure full duration wait even if key pressed early (applies to both modalities)
-    # This is now implicitly handled by the structure: play audio/show text THEN wait.
-    # The wait call itself respects the duration. If rt is not None, the key was pressed
-    # within the duration. If rt is None, the full duration passed.
 
     # RT is relative to the start of the wait (prompt_onset_time)
     # Only update logged_key/rt if they weren't set by error conditions above
@@ -594,7 +597,7 @@ for index, trial_data in stim_df.iterrows():
                 exp.clock.wait(1) # Wait 1ms to yield CPU
         else:
              print(f"Warning: Could not get target onset for next trial {trial_id_one_based + 1}. Using default ITI.")
-             default_iti = rest_durations_list[index] # Use assigned rest as fallback
+             default_iti = preloaded_trial_durations[index] # Use assigned rest as fallback
              wait_end_time = exp.clock.time + default_iti
              while exp.clock.time < wait_end_time:
                  if exp.keyboard.check(ESCAPE_KEY):
@@ -609,7 +612,7 @@ for index, trial_data in stim_df.iterrows():
     else:
         # --- ITI for the LAST trial ---
         # Wait for the duration assigned to this last trial
-        last_trial_rest_duration = rest_durations_list[index] # index is num_trials - 1 here
+        last_trial_rest_duration = preloaded_trial_durations[index] # index is num_trials - 1 here
         #print(f"Last trial (Trial {trial_id_one_based}): Presenting fixation for assigned rest duration: {last_trial_rest_duration} ms") # Debug print
         wait_end_time = exp.clock.time + last_trial_rest_duration
         while exp.clock.time < wait_end_time:
@@ -636,7 +639,7 @@ if last_trial_target_onset > 0:
     last_trial_data = stim_df.iloc[-1]
     last_modality = last_trial_data['modality'].lower()
     last_word_count = preloaded_word_counts.get(num_trials, 0)
-    last_trial_rest_duration = rest_durations_list[num_trials - 1] # Get the rest duration assigned to the last trial
+    last_trial_rest_duration = preloaded_trial_durations[num_trials - 1] # Get the rest duration assigned to the last trial
 
     if last_modality == 'visual':
         last_trial_stim_probe_duration = (last_word_count * STIMULUS_ONTIME) + (last_word_count * STIMULUS_ITI) + SOA_PROBE + PROBE_DURATION
