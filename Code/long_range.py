@@ -22,9 +22,9 @@ script_dir = Path(__file__).parent.resolve()
 DEBUG = False  # Set to False for fullscreen, True for development mode
 INITIAL_WAIT = 2000  # ms, Wait time after instructions before first trigger/trial
 FINAL_WAIT = 10000   # ms, Wait time at the end of the experiment
-TEXT_SIZE = 50
+TEXT_SIZE = 36
 TEXT_FONT =  str(script_dir / 'Arial.ttf')  # Font for sentence presentation
-PROBE_SIZE = 50
+PROBE_SIZE = 36
 PROBE_FONT = str(script_dir / 'Times_New_Roman_Bold.ttf') # Font for probe presentation
 LEFT_HAND_KEY =  misc.constants.K_y # Key to press after sentence presentation (Use constant)
 RIGHT_HAND_KEY = misc.constants.K_f # "                                                     "
@@ -499,9 +499,10 @@ for index, trial_data in stim_df.iterrows():
         # Wait for PROBE_DURATION, checking for escape
         keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=PROBE_DURATION, process_control_events=True)
         
-        if rt is not -999:
-            exp.clock.wait(PROBE_DURATION - rt) # Wait for 1ms to yield CPU
-            
+        if rt == -999:
+            exp.clock.wait(PROBE_DURATION) # Wait for the full duration if no key was pressed
+        elif keys == LEFT_HAND_KEY or keys == RIGHT_HAND_KEY:
+            exp.clock.wait(PROBE_DURATION - rt) # Prevent partcipant from controlling the probe duratio
         if keys == ESCAPE_KEY:
             control.end(goodbye_text="Experiment aborted.", goodbye_delay=1000)
             sys.exit()
