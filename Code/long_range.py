@@ -23,9 +23,9 @@ DEBUG = False  # Set to False for fullscreen, True for development mode
 INITIAL_WAIT = 2000  # ms, Wait time after instructions before first trigger/trial
 FINAL_WAIT = 10000   # ms, Wait time at the end of the experiment
 TEXT_SIZE = 36
-TEXT_FONT =  str(script_dir / 'Arial.ttf')  # Font for sentence presentation
+TEXT_FONT =  str(script_dir / 'Inconsolata-Regular.ttf')  # Font for sentence presentation
 PROBE_SIZE = 36
-PROBE_FONT = str(script_dir / 'Times_New_Roman_Bold.ttf') # Font for probe presentation
+PROBE_FONT = str(script_dir / 'Inconsolata-Regular.ttf') # Font for probe presentation
 LEFT_HAND_KEY =  misc.constants.K_y # Key to press after sentence presentation (Use constant)
 RIGHT_HAND_KEY = misc.constants.K_f # "                                                     "
 TRIGGER_KEY = misc.constants.K_t# fMRI trigger key
@@ -38,7 +38,6 @@ STIMULUS_ONTIME = 250           # ms, Duration each word is shown (visual) (like
 STIMULUS_ITI = 250              # ms, Duration of the inter-stimulus interval (like params.stimulus_iti)
 SOA_PROBE = 1000                # ms, Fixation duration AFTER sentence BEFORE probe for both modalities (added to last ITI for integer reasons...)
 CUE_DURATION = 1000             # ms, Duration of the modality cues
-CUE_TO_STIM_WAIT = 2000         # ms, Duration of fixation cross wait AFTER cue BEFORE stimulus
 PROBE_DURATION = 2000           # ms, Duration of the probe (based on 'Neural Populations' paper)
 KEY_WAIT_DURATION = PROBE_DURATION # ms, Currently waits for key press only during probe presentation but can tweak this by defining this 
 AUDIO_DURATION = 4000           # ms, Duration of the audio stimulus (like params.audio_duration)
@@ -173,10 +172,6 @@ visual_cue.preload()
 auditory_cue.preload()
 modality_cues = {'visual': visual_cue, 'auditory': auditory_cue} # Store cues in a dict
 
-# Probe Cue
-probe_image_path = Path(image_dir) / "probe_cue.png"
-probe_cue = stimuli.Picture(str(probe_image_path))
-probe_cue.preload()
 # Preload ready and end text screens
 stimuli.TextLine(ready_text).preload()
 stimuli.TextScreen("Fin", end_text).preload()
@@ -269,7 +264,7 @@ for index, trial_data in stim_df.iterrows():
     # Calculate duration of potential cue/fixation for THIS trial
     cue_fix_duration = 0
     if index == 0 or current_modality != previous_modality_for_timing:
-        cue_fix_duration = CUE_DURATION + CUE_TO_STIM_WAIT
+        cue_fix_duration = CUE_DURATION
 
     # Calculate the duration of the stimulus presentation + probe + response window
     word_count = preloaded_word_counts.get(trial_id_one_based, 0)
@@ -373,8 +368,8 @@ for index, trial_data in stim_df.iterrows():
 
             # Present fixation cross AFTER cue
             fixation_cross.present()
-            # Wait for CUE_TO_STIM_WAIT, checking for escape
-            wait_end_time = exp.clock.time + CUE_TO_STIM_WAIT
+            # Wait for CUE_DURATION, checking for escape
+            wait_end_time = exp.clock.time + CUE_DURATION
             while exp.clock.time < wait_end_time:
                 if exp.keyboard.check(ESCAPE_KEY):
                     control.end(goodbye_text="Experiment aborted.", goodbye_delay=1000)
@@ -384,7 +379,7 @@ for index, trial_data in stim_df.iterrows():
             print(f"Warning: Could not find preloaded cue for modality '{current_modality}'")
             # Optionally, present a default (like fixation) and wait anyway
             fixation_cross.present()
-            exp.clock.wait(CUE_DURATION + CUE_TO_STIM_WAIT) # Wait the full combined duration
+            exp.clock.wait(CUE_DURATION) # Wait the full combined duration
     # -------------------------------------------------------------
 
     # Retrieve preloaded stimulus using the 1-based index
@@ -477,7 +472,6 @@ for index, trial_data in stim_df.iterrows():
             continue # Skip rest of trial logic
 
     # 2. Post-Stimulus Fixation (SOA_PROBE)
-    probe_cue.present()
     exp.clock.wait(SOA_PROBE)
     post_stim_fixation_end_time = exp.clock.time
 

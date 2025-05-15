@@ -1,0 +1,43 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Thu May 15 2025 15:31:49
+#--EXPERIMENT INFO
+#e mainfile: biling_localizer_main.py
+#e sha1: 771dae
+#e modules: 
+#e Experiment: bilingue_localizer
+#e no between subject factors
+#e Block 0: block1
+#e     block factors: 
+#e     n trials: 81
+#e     trial factors: subj = [1]
+#e                    nbloc = [0, 1, 10, 11, 12, 13, 14, 15, 16, 2, 3, 4, 5, 6, 7, 8, 9]
+#e                    langue = [fr, nan, wol]
+#e                    sent_onset = [101900, 10326, 106696, 118236, 122916, 127674, 132551, 138089, 149186, 1500, 153545, 158045, 15864, 162339, 167050, 177779, 182144, 186163, 190843, 195939, 19892, 206785, 211183, 215802, 219856, 224356, 235415, 239812, 244492, 248652, 253661, 265238, 269787, 275285, 279785, 284183, 295043, 299568, 304445, 309129, 30939, 313887, 324934, 329103, 333652, 339150, 342917, 353646, 35439, 358523, 363185, 367550, 371642, 382370, 387210, 391829, 396010, 39939, 400170, 411229, 415913, 420922, 425082, 429959, 441321, 445502, 44575, 449796, 453563, 458112, 461215, 49415, 5646, 60513, 64532, 68897, 73742, 78426, 89473, 93973, 97740]
+#e                    sent_dur = [1000, 2467, 2719, 2728, 2729, 2754, 2792, 2846, 2860, 2869, 2881, 2994, 3047, 3059, 3065, 3097, 3098, 3200, 3225, 3249, 3319, 3336, 3362, 3380, 3384, 3411, 3458, 3496, 3540, 3545, 3577, 3709, 3796, 4198, 4238]
+#e                    stims = [fr_localizer-01_0p82.wav, fr_localizer-02_0p82.wav, fr_localizer-03-2_0p82.wav, fr_localizer-04_0p82.wav, fr_localizer-05_0p82.wav, fr_localizer-06_0p82.wav, fr_localizer-07-2_0p82.wav, fr_localizer-10_0p82.wav, fr_localizer-11_0p82.wav, fr_localizer-13_0p82.wav, fr_localizer-15_0p82.wav, fr_localizer-16_0p82.wav, fr_localizer-17_0p82.wav, fr_localizer-18-2_0p82.wav, fr_localizer-19.wav, fr_localizer-20_0p82.wav, fr_localizer-22_0p82.wav, fr_localizer-23_0p82.wav, silent-1sec.wav, wol3153_22050_1p15_LPF.wav, wol3154_22050_1p15_LPF.wav, wol3156_22050_1p15_LPF.wav, wol3157_22050_1p15_LPF.wav, wol3158_22050_1p15_LPF.wav, wol3161_22050_1p15_LPF.wav, wol3162_22050_1p15_LPF.wav, wol3167_22050_1p15_LPF.wav, wol3168_22050_1p15_LPF.wav, wol3173_22050_1p15_LPF.wav, wol3175_22050_1p15_LPF.wav, wol3178_22050_1p15_LPF.wav, wol3186_22050_1p15_LPF.wav, wol3187_22050_1p15_LPF.wav, wol3188_22050_1p15_LPF.wav, wol3192_22050_1p15_LPF.wav, wol3201_22050_1p15_LPF.wav, wol3214_22050_1p15_LPF.wav]
+#e                    
+#--SUBJECT INFO
+#s id: 1
+subject_id,subj,nbloc,langue,sent_onset,real_sentence_onset_before,real_sentence_onset_after,sent_dur,filename
+1,1,0,fr,1500,1500,1500,2846,./sound_files/fr_localizer-04_0p82.wav
+1,1,0,fr,5646,5646,5646,3380,./sound_files/fr_localizer-17_0p82.wav
+1,1,0,fr,10326,10326,10326,4238,./sound_files/fr_localizer-22_0p82.wav
+1,1,0,fr,15864,15864,15864,2728,./sound_files/fr_localizer-07-2_0p82.wav
+1,1,0,fr,19892,19892,19892,3047,./sound_files/fr_localizer-03-2_0p82.wav
+1,1,1,wol,30939,30939,30939,3200,./sound_files/wol3168_22050_1p15_LPF.wav
+1,1,1,wol,35439,35439,35439,3200,./sound_files/wol3178_22050_1p15_LPF.wav
+1,1,1,wol,39939,39939,39939,3336,./sound_files/wol3167_22050_1p15_LPF.wav
+1,1,1,wol,44575,44575,44575,3540,./sound_files/wol3201_22050_1p15_LPF.wav
+1,1,1,wol,49415,49415,49415,3098,./sound_files/wol3161_22050_1p15_LPF.wav
+1,1,2,fr,60513,60513,60513,2719,./sound_files/fr_localizer-01_0p82.wav
+1,1,2,fr,64532,64532,64532,3065,./sound_files/fr_localizer-16_0p82.wav
+1,1,2,fr,68897,68897,68897,3545,./sound_files/fr_localizer-02_0p82.wav
+1,1,2,fr,73742,73742,73742,3384,./sound_files/fr_localizer-19.wav
+1,1,2,fr,78426,78426,78426,3047,./sound_files/fr_localizer-03-2_0p82.wav
+1,1,3,wol,89473,89473,89473,3200,./sound_files/wol3178_22050_1p15_LPF.wav
+1,1,3,wol,93973,93973,93973,2467,./sound_files/wol3156_22050_1p15_LPF.wav
+1,1,3,wol,97740,97740,97740,2860,./sound_files/wol3157_22050_1p15_LPF.wav
+1,1,3,wol,101900,101900,101900,3496,./sound_files/wol3192_22050_1p15_LPF.wav
+1,1,3,wol,106696,106696,106696,3540,./sound_files/wol3201_22050_1p15_LPF.wav
+1,1,4,fr,118236,118236,118236,3380,./sound_files/fr_localizer-17_0p82.wav
+1,1,4,fr,122916,122916,122916,3458,./sound_files/fr_localizer-13_0p82.wav
