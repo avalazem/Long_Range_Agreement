@@ -1,0 +1,37 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Thu May 15 2025 15:18:10
+#sha1: 3905dd
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-25-generic', version='#25-Ubuntu SMP PREEMPT_DYNAMIC Fri Apr 11 23:29:18 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+394,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+426,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+431,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+435,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+440,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+444,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+450,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+626,stdout,received,'Total number of trials: 40'
+626,stdout,received,'Expected Total duration: 538.00 s'
+2648,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 1)
+#design: block_cnt,block_id,trial_cnt,trial_id
+2648,design,logged,
+2648,Experiment,started
+2663,Stimulus,presented,2
+4167,Keyboard,received,32,wait
+4193,Stimulus,presented,210
+5210,Keyboard,received,116,wait
+5485,Keyboard,received,116,wait
+5698,Keyboard,received,116,wait
+5722,Stimulus,presented,0
+7722,stdout,received,'Starting main trial loop...'
+7722,stdout,received,'Trial 1 Target: 2000.00 Actual: 2024.00 Delta: 24.00'
+7722,stdout,received,'Presenting cue for modality: auditory'
+7747,Stimulus,presented,4
+7747,Experiment,paused
+7764,Stimulus,presented,211
+8259,Keyboard,received,y,wait_char
+8259,Experiment,ended
+8284,Stimulus,presented,211

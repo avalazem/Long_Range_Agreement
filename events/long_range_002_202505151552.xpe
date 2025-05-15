@@ -1,0 +1,74 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Thu May 15 2025 15:52:44
+#sha1: 3905dd
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-25-generic', version='#25-Ubuntu SMP PREEMPT_DYNAMIC Fri Apr 11 23:29:18 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+363,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+394,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+398,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+402,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+408,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+412,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+417,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/probe_cue.png
+586,stdout,received,'Total number of trials: 40'
+586,stdout,received,'Expected Total duration: 538.00 s'
+3664,design,log,
+#design: #exp: Long-Range Agreement - Sub 01 Run 2)
+#design: block_cnt,block_id,trial_cnt,trial_id
+3664,design,logged,
+3664,Experiment,started
+3679,Stimulus,presented,2
+4424,Keyboard,received,32,wait
+4450,Stimulus,presented,210
+5086,Keyboard,received,116,wait
+5309,Keyboard,received,116,wait
+5487,Keyboard,received,116,wait
+5511,Stimulus,presented,0
+7511,stdout,received,'Starting main trial loop...'
+7511,stdout,received,'Trial 1 Target: 2000.00 Actual: 2024.00 Delta: 24.00'
+7511,stdout,received,'Presenting cue for modality: visual'
+7536,Stimulus,presented,3
+8560,Stimulus,presented,0
+10584,Stimulus,presented,8
+10858,Stimulus,presented,1
+11132,Stimulus,presented,9
+11406,Stimulus,presented,1
+11680,Stimulus,presented,10
+11954,Stimulus,presented,1
+12228,Stimulus,presented,11
+12502,Stimulus,presented,1
+12776,Stimulus,presented,12
+13050,Stimulus,presented,1
+13324,Stimulus,presented,13
+13598,Stimulus,presented,1
+13872,Stimulus,presented,14
+14146,Stimulus,presented,1
+14420,Stimulus,presented,15
+14694,Stimulus,presented,1
+14968,Stimulus,presented,5
+15993,Stimulus,presented,211
+17993,Keyboard,received,None,wait
+18018,Stimulus,presented,0
+22487,stdout,received,'Trial 2 Target: 17000.00 Actual: 17000.00 Delta: 0.00'
+22512,Stimulus,presented,16
+22786,Stimulus,presented,1
+23060,Stimulus,presented,17
+23334,Stimulus,presented,1
+23608,Stimulus,presented,18
+23882,Stimulus,presented,1
+24156,Stimulus,presented,19
+24430,Stimulus,presented,1
+24704,Stimulus,presented,20
+24978,Stimulus,presented,1
+25252,Stimulus,presented,21
+25526,Stimulus,presented,1
+25800,Stimulus,presented,22
+26074,Stimulus,presented,1
+26117,Experiment,paused
+26124,Stimulus,presented,212
+26314,Keyboard,received,y,wait_char
+26314,Experiment,ended
+26314,Data,saved
+26339,Stimulus,presented,212
