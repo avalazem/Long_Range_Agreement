@@ -22,9 +22,9 @@ script_dir = Path(__file__).parent.resolve()
 DEBUG = False  # Set to False for fullscreen, True for development mode
 INITIAL_WAIT = 2000  # ms, Wait time after instructions before first trigger/trial
 FINAL_WAIT = 10000   # ms, Wait time at the end of the experiment
-TEXT_SIZE = 36
+TEXT_SIZE = 50 
 TEXT_FONT =  str(script_dir / 'Inconsolata-Regular.ttf')  # Font for sentence presentation
-PROBE_SIZE = 36
+PROBE_SIZE = 50
 PROBE_FONT = str(script_dir / 'Inconsolata-Regular.ttf') # Font for probe presentation
 LEFT_HAND_KEY =  misc.constants.K_y # Key to press after sentence presentation (Use constant)
 RIGHT_HAND_KEY = misc.constants.K_f # "                                                     "
@@ -34,12 +34,12 @@ ESCAPE_KEY = misc.constants.K_ESCAPE # Key to exit the experiment
 CONTROLLER_KEY = misc.constants.K_SPACE # Key for experimenter to start after instructions
 
 # Timing Parameters (modify as needed)
-STIMULUS_ONTIME = 250           # ms, Duration each word is shown (visual) (like params.stimulus_ontime)
-STIMULUS_ITI = 250              # ms, Duration of the inter-stimulus interval (like params.stimulus_iti)
+STIMULUS_ONTIME = 200           # ms, Duration each word is shown (visual) (like params.stimulus_ontime)
+STIMULUS_ITI = 200              # ms, Duration of the inter-stimulus interval (like params.stimulus_iti)
 SOA_PROBE = 1000                # ms, Fixation duration AFTER sentence BEFORE probe for both modalities (added to last ITI for integer reasons...)
-CUE_DURATION = 1000             # ms, Duration of the modality cues
-PROBE_DURATION = 2000           # ms, Duration of the probe (based on 'Neural Populations' paper)
-KEY_WAIT_DURATION = PROBE_DURATION # ms, Currently waits for key press only during probe presentation but can tweak this by defining this 
+CUE_DURATION = 1000             # ms, Duration of the input modality cues (visual/auditory)
+PROBE_DURATION = 1000           # ms, Duration of the probe (based on 'Neural Populations' paper)
+RESPONSE_DURATION = 2000        # ms, Within rest period, how long to wait for a response AFTER probe
 AUDIO_DURATION = 4000           # ms, Duration of the audio stimulus (like params.audio_duration)
 # ----------------------------------------
 
@@ -180,7 +180,7 @@ stimuli.TextScreen("Fin", end_text).preload()
 # --- Preload Trial Stimuli ---
 preloaded_stimuli = {} # Dictionary to hold preloaded stimuli for each trial
 preloaded_word_counts = {} # Dictionary to hold word counts for visual trials
-preloaded_trial_durations = {} # Dictionary to hold trial durations
+preloaded_rest_durations = {} # Dictionary to hold trial durations
 
 for index, trial_data in stim_df.iterrows():
     # Use 1-based index for trial ID and filename, matching row number
@@ -275,10 +275,10 @@ for index, trial_data in stim_df.iterrows():
     else:
         trial_stim_probe_duration = 0 # Should not happen
 
-    preloaded_trial_durations[trial_id_one_based] = trial_data['trial_duration'] * 1000 # Get the trial duration from the CSV
+    preloaded_rest_durations[trial_id_one_based] = trial_data['rest_duration'] * 1000 # Get the trial duration from the CSV
     
     # Get ITI for this trial (assigned rest duration)
-    current_iti = preloaded_trial_durations[trial_id_one_based]
+    current_iti = preloaded_rest_durations[trial_id_one_based]
 
     # Calculate the start time for the next trial's block
     # Add this trial's cue/fix duration, stim/probe duration, and ITI
@@ -318,7 +318,7 @@ exp.clock.wait(INITIAL_WAIT)
 # Use subject ID and run number for log file name
 log_filename = log_dir / f"subject_{subject_id}_LRA_{run_number}.csv"
 # Use 1-based TrialNumber instead of TrialID which might be confusing
-exp.data_variable_names = ["TrialNumber", "Sentence", "Structure", "Modality", "KEY", "RT_ms"]
+exp.data_variable_names = ["TrialNumber", "TrialOnset_ms", "Sentence", "Structure", "Modality", "StimulusDuration_ms", "KEY", "RT_ms"]
 
 # --- Main Trial Loop ---
 print("Starting main trial loop...") # Added for clarity
@@ -346,6 +346,8 @@ for index, trial_data in stim_df.iterrows():
 
     # --- Timing Verification (Print AFTER initial wait) --- (Moved up)
     actual_onset = exp.clock.time - start_time # Time block actually starts
+    stimulus_actual_duration_ms = -1.0 # Initialize stimulus duration for logging
+
     delta = actual_onset - target_onset
     warn = " !!!" if delta > 25 else "" # Adjusted warning threshold slightly
     # Print timing info for the *current* trial block start
@@ -388,11 +390,11 @@ for index, trial_data in stim_df.iterrows():
     # Skip trial if stimulus failed to load/preload
     if current_stim_data is None:
          print(f"Skipping trial {trial_id_one_based} due to missing/failed stimulus data.")
-         exp.data.add([trial_id_one_based, sentence, structure, current_modality, "NO_STIM_DATA", -3]) # Adjusted log
+         exp.data.add([trial_id_one_based, actual_onset, sentence, structure, current_modality, stimulus_actual_duration_ms, "NO_STIM_DATA", -3]) # MODIFIED
          previous_modality = current_modality # Update modality even if skipped
          # Need to wait for the ITI duration even if skipped
          fixation_cross.present()
-         current_rest = preloaded_trial_durations[index]
+         current_rest = preloaded_rest_durations[index]
          exp.clock.wait(current_rest)
          continue
 
@@ -423,6 +425,8 @@ for index, trial_data in stim_df.iterrows():
                 exp.clock.wait(1) # Wait 1ms to yield CPU
 
         stimulus_end_time = exp.clock.time # End time is after last word's IWI wait
+        if stimulus_start_time > 0 and stimulus_end_time > stimulus_start_time:
+            stimulus_actual_duration_ms = stimulus_end_time - stimulus_start_time
 
     elif current_modality == 'auditory':
         sentence_audio, probe_audio = current_stim_data # Unpack the tuple
@@ -430,10 +434,10 @@ for index, trial_data in stim_df.iterrows():
         # Check if sentence audio is valid before proceeding
         if sentence_audio is None:
             print(f"Skipping trial {trial_id_one_based} due to missing sentence audio.")
-            exp.data.add([trial_id_one_based, sentence, structure, current_modality, "NO_SENT_AUDIO", -2]) # Log specific error
+            exp.data.add([trial_id_one_based, actual_onset, sentence, structure, current_modality, stimulus_actual_duration_ms, "NO_SENT_AUDIO", -2]) # MODIFIED
             # Go directly to Rest duration for this trial
             blank_screen.present()
-            current_rest = preloaded_trial_durations[index] # Rest still uses 0-based index
+            current_rest = preloaded_rest_durations[index] # Rest still uses 0-based index
             exp.clock.wait(current_rest)
             continue # Skip rest of trial logic
 
@@ -462,12 +466,14 @@ for index, trial_data in stim_df.iterrows():
 
             sentence_audio.stop() # Stop playback immediately after AUDIO_DURATION
             stimulus_end_time = exp.clock.time # End time is right after audio stops
+            if stimulus_start_time > 0 and stimulus_end_time > stimulus_start_time:
+                stimulus_actual_duration_ms = stimulus_end_time - stimulus_start_time
         except Exception as e:
             print(f"Error presenting preloaded sentence audio for trial {trial_id_one_based}: {e}")
-            exp.data.add([trial_id_one_based, sentence, structure, current_modality, "SENT_AUDIO_ERR", -2])
+            exp.data.add([trial_id_one_based, actual_onset, sentence, structure, current_modality, stimulus_actual_duration_ms, "SENT_AUDIO_ERR", -2]) # MODIFIED
             # Go directly to Rest duration for this trial
             blank_screen.present()
-            current_rest = preloaded_trial_durations[index] # Rest still uses 0-based index
+            current_rest = preloaded_rest_durations[index] # Rest still uses 0-based index
             exp.clock.wait(current_rest)
             continue # Skip rest of trial logic
 
@@ -475,111 +481,165 @@ for index, trial_data in stim_df.iterrows():
     exp.clock.wait(SOA_PROBE)
     post_stim_fixation_end_time = exp.clock.time
 
-    # 3. Probe Presentation & Response Window (Combined)
+    # 3. Probe Presentation & Response Window
     keys = None
     rt = None
-    logged_key = "ERROR"
-    logged_rt = -999
+    logged_key = "ERROR" # Default to error, overwrite on success
+    logged_rt = -999    # Default to error, overwrite on success
+    probe_presentation_end_time = -1 # Initialize
 
     if current_modality == 'visual':
         # --- Visual Probe ---
         current_probe = stimuli.TextLine(probe_word, text_size=PROBE_SIZE, text_font=PROBE_FONT)
-        current_probe.present() # <-- Present the trial-specific probe
-        prompt_onset_time = exp.clock.time
-        keys = None
-        rt = None
-        first_key_press_time = None
-        
-        # Wait for PROBE_DURATION, checking for escape
-        keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=PROBE_DURATION, process_control_events=True)
-        
-        if rt == -999:
-            exp.clock.wait(PROBE_DURATION) # Wait for the full duration if no key was pressed
-        elif keys == LEFT_HAND_KEY or keys == RIGHT_HAND_KEY:
-            exp.clock.wait(PROBE_DURATION - rt) # Prevent partcipant from controlling the probe duratio
-        if keys == ESCAPE_KEY:
-            control.end(goodbye_text="Experiment aborted.", goodbye_delay=1000)
+        current_probe.present()
+        probe_presentation_start_time = exp.clock.time
+
+        # Wait for PROBE_DURATION (presentation only), checking for ESCAPE
+        wait_end_probe_presentation = probe_presentation_start_time + PROBE_DURATION
+        escaped_during_probe = False
+        while exp.clock.time < wait_end_probe_presentation:
+            if exp.keyboard.check(ESCAPE_KEY):
+                escaped_during_probe = True
+                break
+            exp.clock.wait(1) # yield to other processes, check often
+
+        if escaped_during_probe:
+            control.end(goodbye_text="Experiment aborted during visual probe.", goodbye_delay=1000)
             sys.exit()
-            
+        
+        probe_presentation_end_time = exp.clock.time # Mark end of visual probe presentation
+
+        # Probe presentation finished. RT starts from now.
+        # Present fixation cross during the response window.
+        fixation_cross.present()
+        
+        # Collect response during RESPONSE_DURATION
+        # rt will be relative to the start of this call (i.e., from probe_presentation_end_time).
+        keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=RESPONSE_DURATION)
+        
+        # keys could be a key constant or None if timeout. rt is ms or None.
 
     elif current_modality == 'auditory':
         # --- Auditory Probe ---
-        sentence_audio, probe_audio = current_stim_data # Unpack again (already done above, but safe)
         fixation_cross.present() # Keep fixation during auditory probe
 
         if probe_audio is not None:
             try:
-                probe_audio.play() # Start playing probe audio
-                prompt_onset_time = exp.clock.time
-                # Wait for key press DURING probe presentation window
-                keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=PROBE_DURATION, process_control_events=True)
-                # Stop the probe audio explicitly after the wait window,
-                # regardless of whether it finished naturally or not.
-                probe_audio.stop()
+                probe_audio.play()
+                probe_presentation_start_time = exp.clock.time
+
+                # Wait for PROBE_DURATION (presentation only), checking for ESCAPE
+                wait_end_probe_presentation = probe_presentation_start_time + PROBE_DURATION
+                escaped_during_probe = False
+                while exp.clock.time < wait_end_probe_presentation:
+                    # Check if audio finished playing; if so, just continue waiting out PROBE_DURATION
+                    if not probe_audio.is_playing and exp.clock.time < wait_end_probe_presentation:
+                        # Audio finished early, but we wait for full PROBE_DURATION
+                        pass
+                    if exp.keyboard.check(ESCAPE_KEY):
+                        escaped_during_probe = True
+                        break
+                    exp.clock.wait(1) # yield
+
+                probe_audio.stop() # Ensure audio stops if it was still playing
+
+                if escaped_during_probe:
+                    control.end(goodbye_text="Experiment aborted during auditory probe.", goodbye_delay=1000)
+                    sys.exit()
+                
+                probe_presentation_end_time = exp.clock.time # Mark end of auditory probe presentation
+                
+                # Probe presentation finished. RT starts from now.
+                # Fixation cross should still be visible.
+                # Collect response during RESPONSE_DURATION
+                keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=RESPONSE_DURATION)
+
             except Exception as e:
-                 print(f"Error playing probe audio for trial {trial_id_one_based}: {e}")
-                 # Still wait for the duration even if audio fails
-                 prompt_onset_time = exp.clock.time
-                 keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=PROBE_DURATION, process_control_events=True)
-                 logged_key = "PROBE_AUDIO_ERR"
-                 logged_rt = -4 # Indicate probe audio error
-        else:
-            # Probe audio was missing or failed to preload
+                print(f"Error playing probe audio for trial {trial_id_one_based}: {e}")
+                # Attempt to maintain timing integrity even if audio fails
+                # Simulate probe presentation duration
+                current_time = exp.clock.time
+                simulated_probe_end = current_time + PROBE_DURATION
+                while exp.clock.time < simulated_probe_end:
+                    if exp.keyboard.check(ESCAPE_KEY): # Still allow escape
+                        control.end(goodbye_text="Experiment aborted during audio error handling.", goodbye_delay=1000)
+                        sys.exit()
+                    exp.clock.wait(1)
+                probe_presentation_end_time = exp.clock.time
+                
+                # Simulate response duration (and collect keys if any)
+                keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=RESPONSE_DURATION)
+                logged_key = "PROBE_AUDIO_ERR"
+                logged_rt = -4 # Indicate probe audio error
+
+        else: # Probe audio was missing or failed to preload
             print(f"Probe audio missing for trial {trial_id_one_based}. Presenting fixation for probe duration.")
-            prompt_onset_time = exp.clock.time
-            # Wait for the duration with fixation cross, collect response if any
-            keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=PROBE_DURATION, process_control_events=True)
+            fixation_cross.present()
+            # Wait for PROBE_DURATION (silent presentation)
+            current_time = exp.clock.time
+            simulated_probe_end = current_time + PROBE_DURATION
+            while exp.clock.time < simulated_probe_end:
+                if exp.keyboard.check(ESCAPE_KEY): # Still allow escape
+                    control.end(goodbye_text="Experiment aborted during missing audio handling.", goodbye_delay=1000)
+                    sys.exit()
+                exp.clock.wait(1)
+            probe_presentation_end_time = exp.clock.time
+
+            # Collect response during RESPONSE_DURATION
+            keys, rt = exp.keyboard.wait(keys=[LEFT_HAND_KEY, RIGHT_HAND_KEY, ESCAPE_KEY], duration=RESPONSE_DURATION)
             logged_key = "NO_PROBE_AUDIO"
             logged_rt = -5 # Indicate missing probe audio file
 
     # --- Process Response ---
-    # Check for Escape Key during probe wait (applies to both modalities)
-    if keys == ESCAPE_KEY:
-        control.end(goodbye_text="Experiment aborted by user.", goodbye_delay=1000)
+    if keys == ESCAPE_KEY: # Check if escape was pressed during RESPONSE_DURATION
+        control.end(goodbye_text="Experiment aborted by user during response window.", goodbye_delay=1000)
         sys.exit()
 
-    # RT is relative to the start of the wait (prompt_onset_time)
-    # Only update logged_key/rt if they weren't set by error conditions above
-    if logged_key == "ERROR": # i.e., no audio error occurred
-        logged_rt = rt if rt is not None else -999 # Use -999 for timeout
-
-        # Convert key code to string manually based on the constants used
-        if keys == LEFT_HAND_KEY:
+    # RT is relative to the start of the RESPONSE_DURATION window.
+    # Only update logged_key/rt if they weren't set by specific error conditions above (PROBE_AUDIO_ERR, NO_PROBE_AUDIO)
+    if logged_key == "ERROR": # Default value, means no specific error was logged for key/rt yet
+        if keys is None: # Timeout during RESPONSE_DURATION
+            logged_key = "TIMEOUT"
+            logged_rt = -1 # Using -1 for timeout, as expyriment rt is None for timeout. -999 was previous.
+        elif keys == LEFT_HAND_KEY:
             logged_key = 'left'
+            logged_rt = rt 
         elif keys == RIGHT_HAND_KEY:
             logged_key = 'right'
-        elif keys is None: # Timeout
-            logged_key = "TIMEOUT"
-        # else: logged_key remains "ERROR" if something unexpected happened
+            logged_rt = rt
+        # else: logged_key remains "ERROR" and logged_rt -999 if unexpected key or situation.
 
-    # The wait is finished, the probe implicitly disappears when the next stimulus (ITI fixation) is presented.
-    response_window_actual_end_time = exp.clock.time # Mark the end of the combined window
+    # The response window is finished.
+    response_window_actual_end_time = exp.clock.time
 
     # 4. Log Data
-    # Log the string representation of the key
-    exp.data.add([trial_id_one_based, sentence, structure, current_modality, logged_key, logged_rt])
+    # Log the string representation of the key and the RT.
+    # actual_onset was captured at the beginning of the trial block.
+    # stimulus_actual_duration_ms was calculated after stimulus presentation or remains -1.0
+    exp.data.add([trial_id_one_based, actual_onset, sentence, structure, current_modality, stimulus_actual_duration_ms, logged_key, logged_rt])
 
     # Update previous modality for the next iteration AFTER processing the current trial
     previous_modality = current_modality
 
     # 5. Inter-Trial Interval (ITI) - Dynamic Wait Calculation
-    fixation_cross.present() # Present fixation for ITI (This now happens for ALL trials including the last)
+    # This section now handles the "ITI_proper", which is the time remaining from
+    # the RestDurationFromCSV after RESPONSE_DURATION has occurred.
+    # The target_onset_times logic correctly calculates the required wait time
+    # from the end of the response window to the start of the next trial.
+    fixation_cross.present() 
 
-    # Calculate the target onset for the *next* trial
-    next_trial_index = index + 1
-    if next_trial_index < num_trials:
+    if trial_id_one_based < num_trials: # Corrected: Use trial_id_one_based instead of next_trial_index
         # --- ITI for non-last trials ---
         target_onset_next_trial = target_onset_times.get(trial_id_one_based + 1, -1)
         if target_onset_next_trial > 0:
-            current_time_before_iti_wait = exp.clock.time - start_time
-            required_iti_wait = target_onset_next_trial - current_time_before_iti_wait
+            current_time_after_response_window = exp.clock.time - start_time
+            required_fixation_wait = target_onset_next_trial - current_time_after_response_window
 
-            if required_iti_wait < 0:
-                print(f"Warning: Trial {trial_id_one_based} block overran expected end time. Setting ITI wait to 0.")
-                required_iti_wait = 0
-
-            # Wait exactly the time needed, checking for escape
-            wait_end_time = exp.clock.time + required_iti_wait
+            if required_fixation_wait < 0:
+                print(f"Warning: Trial {trial_id_one_based} block overran expected end time. Setting ITI fixation wait to 0.")
+                required_fixation_wait = 0
+            
+            wait_end_time = exp.clock.time + required_fixation_wait
             while exp.clock.time < wait_end_time:
                 if exp.keyboard.check(ESCAPE_KEY):
                     # Ensure data is saved if aborted during ITI
@@ -592,7 +652,7 @@ for index, trial_data in stim_df.iterrows():
                 exp.clock.wait(1) # Wait 1ms to yield CPU
         else:
              print(f"Warning: Could not get target onset for next trial {trial_id_one_based + 1}. Using default ITI.")
-             default_iti = preloaded_trial_durations[index] # Use assigned rest as fallback
+             default_iti = preloaded_rest_durations[index] # Use assigned rest as fallback
              wait_end_time = exp.clock.time + default_iti
              while exp.clock.time < wait_end_time:
                  if exp.keyboard.check(ESCAPE_KEY):
@@ -606,14 +666,18 @@ for index, trial_data in stim_df.iterrows():
                  exp.clock.wait(1)
     else:
         # --- ITI for the LAST trial ---
-        # Wait for the duration assigned to this last trial
-        last_trial_rest_duration = preloaded_trial_durations[index] # index is num_trials - 1 here
-        #print(f"Last trial (Trial {trial_id_one_based}): Presenting fixation for assigned rest duration: {last_trial_rest_duration} ms") # Debug print
-        wait_end_time = exp.clock.time + last_trial_rest_duration
+        rest_duration_from_csv = preloaded_rest_durations[index] # index is num_trials - 1 here
+        
+        # ITI_proper for the last trial:
+        actual_fixation_for_last_trial = rest_duration_from_csv - RESPONSE_DURATION
+        if actual_fixation_for_last_trial < 0:
+            print(f"Warning: Last trial's configured rest duration ({rest_duration_from_csv}ms) is less than RESPONSE_DURATION ({RESPONSE_DURATION}ms). Final fixation will be 0ms.")
+            actual_fixation_for_last_trial = 0
+            
+        wait_end_time = exp.clock.time + actual_fixation_for_last_trial
         while exp.clock.time < wait_end_time:
             if exp.keyboard.check(ESCAPE_KEY):
                 # Ensure data is saved if aborted during final ITI
-                # Corrected data saving on abort during ITI (Matches other ITI blocks)
                 data_file = io.DataFile(filename=log_filename)
                 data_file.add(exp.data)
                 data_file.save()
@@ -624,17 +688,13 @@ for index, trial_data in stim_df.iterrows():
 
 # --- End of Main Trial Loop ---
 
-# --- End of Experiment ---
-# Uncomment to add 'Fin' screen (optional)
-#stimuli.TextScreen("Fin", end_text).present()
-
 # Calculate the expected end time of the last trial's activity
 last_trial_target_onset = target_onset_times.get(num_trials, -1)
 if last_trial_target_onset > 0:
     last_trial_data = stim_df.iloc[-1]
     last_modality = last_trial_data['modality'].lower()
     last_word_count = preloaded_word_counts.get(num_trials, 0)
-    last_trial_rest_duration = preloaded_trial_durations[num_trials - 1] # Get the rest duration assigned to the last trial
+    last_trial_rest_duration = preloaded_rest_durations[num_trials - 1] # Get the rest duration assigned to the last trial
 
     if last_modality == 'visual':
         last_trial_stim_probe_duration = (last_word_count * STIMULUS_ONTIME) + (last_word_count * STIMULUS_ITI) + SOA_PROBE + PROBE_DURATION

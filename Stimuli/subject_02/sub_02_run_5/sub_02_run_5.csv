@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GSLS,lr_obj,no,yes,no,,plur,plur,plur,bouchers,gérants,émeuvent,Ces bouchers que les gérants émeuvent savent cuisiner.,visual,émeuvent,True,5.0
 trial_2,GDLD,lr_obj,yes,yes,yes,6.0,sing,sing,plur,facteur,juge,reçoivent,Ce facteur que le juge reçoivent ment souvent.,visual,Ce,True,5.5
 trial_3,GDLS,lr_pp,yes,no,no,6.0,sing,plur,plur,facteur,juges,punissent,Un facteur auprès des juges punissent un matelot.,visual,défendent,False,6.0

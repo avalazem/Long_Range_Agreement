@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GD,sr_pp,yes,yes,yes,6.0,sing,sing,plur,chanteur,client,séduisent,Proche du chanteur ce client séduisent le danseur.,auditory,un,False,5.0
 trial_2,GDLS,lr_obj,no,no,yes,,plur,sing,sing,malades,notaire,séduit,Des malades que le notaire séduit savent conduire.,auditory,hait,False,5.5
 trial_3,GSLS,lr_obj,no,yes,no,,sing,sing,sing,libraire,médecin,entend,Ce libraire que le médecin entend repart dehors.,auditory,Un,False,6.0

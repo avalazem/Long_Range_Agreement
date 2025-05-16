@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GSLS,lr_obj,no,yes,no,,sing,sing,sing,client,gardien,punit,Un client que ce gardien punit veut mourir.,visual,punit,True,5.0
 trial_2,GSLD,lr_obj,yes,no,no,6.0,sing,plur,sing,boucher,patients,hait,Un boucher que les patients hait répond aussitôt.,visual,Ce,False,5.5
 trial_3,GDLD,lr_pp,yes,yes,yes,6.0,plur,plur,sing,champions,clients,bénit,Les champions proche des clients bénit les dentistes.,visual,dentistes,True,6.0

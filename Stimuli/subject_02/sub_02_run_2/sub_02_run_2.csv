@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GDLD,lr_obj,yes,yes,yes,6.0,plur,plur,sing,chanteurs,chefs,défend,Des chanteurs que ces chefs défend écrivent rarement.,visual,mentent,False,5.0
 trial_2,GDLS,lr_obj,no,no,yes,,sing,plur,plur,danseur,prêtres,séduisent,Un danseur que les prêtres séduisent veut manger.,visual,ces,False,5.5
 trial_3,GDLD,lr_obj,yes,yes,yes,6.0,sing,sing,plur,gérant,marchand,punissent,Le gérant que le marchand punissent peint toujours.,visual,Le,True,6.0

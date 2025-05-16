@@ -4,14 +4,14 @@ import random
 
 def create_custom_localizer_csvs():
     # --- Configuration ---
-    source_stim_folder = "/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Christophe_Localizer/lang_localizer/stim"
+    source_stim_folder = "/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Christophe_Localizer/audio-language_localizer/stim"
     output_csv_folder = "/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Christophe_Localizer/lang_localizer/long-range_stim"
     
-    num_subjects_to_generate = 2
+    num_subjects_to_generate = 3
     subject_id_start = 1
     
     num_blocks = 16
-    trials_per_block = 5
+    trials_per_block = 3
     initial_onset_ms = 1500
     inter_block_interval_ms = 8000 # Interval after a block's last trial, before next block's first trial
 

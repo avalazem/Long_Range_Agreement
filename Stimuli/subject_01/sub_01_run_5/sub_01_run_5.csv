@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GDLS,lr_obj,no,no,yes,,plur,sing,sing,champions,chef,émeut,Ces champions que le chef émeut écrivent souvent.,auditory,que,True,5.0
 trial_2,GS,sr_pp,no,yes,no,,sing,sing,sing,marin,notaire,défend,Loin du marin un notaire défend un prêtre.,auditory,dentiste,False,5.5
 trial_3,GSLD,lr_pp,no,no,yes,,sing,plur,sing,chef,facteurs,endort,Ce chef proche des facteurs endort ce serveur.,auditory,facteurs,True,6.0

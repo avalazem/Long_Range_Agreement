@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GDLS,lr_obj,no,no,yes,,sing,plur,plur,client,gardiens,servent,Ce client que ces gardiens servent ment rarement.,visual,rarement,True,5.0
 trial_2,GDLS,lr_pp,yes,no,no,6.0,sing,plur,plur,matelot,notaires,craignent,Un matelot auprès des notaires craignent le plombier.,visual,plombier,True,5.5
 trial_3,GDLD,lr_obj,yes,yes,yes,6.0,plur,plur,sing,chanteurs,matelots,émeut,Des chanteurs que ces matelots émeut doivent manger.,visual,Les,False,6.0
