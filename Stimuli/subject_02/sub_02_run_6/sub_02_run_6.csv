@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GSLS,lr_pp,no,yes,no,,plur,plur,plur,matelots,prêtres,émeuvent,Ces matelots loin des prêtres émeuvent des serveurs.,auditory,soldats,False,5.0
 trial_2,GS,sr_pp,no,yes,no,,plur,plur,plur,coiffeurs,libraires,haïssent,Auprès des coiffeurs ces libraires haïssent des prêtres.,auditory,prêtres,True,5.5
 trial_3,GSLS,lr_obj,no,yes,no,,sing,sing,sing,coiffeur,dentiste,entend,Le coiffeur que ce dentiste entend vomit encore.,auditory,Le,True,6.0

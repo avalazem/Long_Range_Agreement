@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GSLS,lr_obj,no,yes,no,,plur,plur,plur,coiffeurs,notaires,attendent,Ces coiffeurs que les notaires attendent savent conduire.,visual,conduire,True,6.5
 trial_2,GSLS,lr_pp,no,yes,no,,sing,sing,sing,boucher,champion,émeut,Un boucher loin du champion émeut le plombier.,visual,ce,False,5.5
 trial_3,GS,sr_pp,no,yes,no,,sing,sing,sing,champion,chef,suit,Près du champion un chef suit ce médecin.,visual,client,False,6.0

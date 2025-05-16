@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GSLD,lr_obj,yes,no,no,6.0,sing,plur,sing,chef,comédiens,craint,Un chef que les comédiens craint répond lentement.,auditory,prêtre,False,5.0
 trial_2,GSLD,lr_pp,no,no,yes,,plur,sing,plur,comédiens,marin,bénissent,Des comédiens loin du marin bénissent les matelots.,auditory,marins,False,5.5
 trial_3,GSLS,lr_obj,no,yes,no,,sing,sing,sing,danseur,médecin,reçoit,Un danseur que ce médecin reçoit répond rarement.,auditory,rarement,True,6.0

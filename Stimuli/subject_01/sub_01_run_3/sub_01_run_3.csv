@@ -1,4 +1,4 @@
-trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,trial_duration
+trial,condition,structure,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,modality,probe_word,probe,rest_duration
 trial_1,GDLS,lr_obj,no,no,yes,,sing,plur,plur,chanteur,marins,décrivent,Le chanteur que ces marins décrivent part demain.,visual,les,False,5.0
 trial_2,GS,sr_pp,no,yes,no,,sing,sing,sing,malade,matelot,craint,Près du malade un matelot craint le peintre.,visual,peintre,True,5.5
 trial_3,GS,sr_pp,no,yes,no,,plur,plur,plur,coiffeurs,notaires,reçoivent,Près des coiffeurs des notaires reçoivent ces prêtres.,visual,les,False,6.0
