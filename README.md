@@ -1,5 +1,24 @@
-LONG-RANGE AGREEMENT
-# Running the Experiment
+# LONG-RANGE AGREEMENT
+
+# CHECKLIST SUJET_XX
+# - Assurez que tout fonctionne et que les câbles (en particulier pour les pressions sur le trigger et les boutons) sont branchés ☐
+# - Assurez que les contrôleurs disposent de timings pour les TR et comprennent que ça attendra pour 3 "t's"  ☐
+# - Assurez-vous que les boutons vrai/faux sont inversés par rapport au sujet précédent (configure in command line w/ --invert_hands, take note below !) ☐
+# - Sélectionnez-en un:
+#   La main droite est vraie, la gauche est fausse (normale) ☐
+#   La main gauche est vraie, la droite est fausse (inverse)  ☐
+# - Expliquer l'aperçu et la motivation de l'expérience à sujet ☐
+# - Montrez-lui la tâche (s'il le mot était dans la phrase ou non) ☐
+# - Expliquez au sujet sur quel bouton appuyer pour vrai/faux ☐
+# - La pression sur le bouton est après le mot ! (pendant fixation) ☐
+# - Commencez l'entraînement ☐
+# - Commencez main runs ☐
+# - Commencez le localisateur. ☐
+# - Débriefing
+
+
+
+# RUNNING THE EXPERIMENT
 # Note: Main-Exp and Localizer wait for 3 't's
 
 # 1. Training
@@ -9,8 +28,8 @@ LONG-RANGE AGREEMENT
 
 # Run Instructions:
 
-SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_1
-SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_2
+SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/training/sub_train_run_1
+SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/training/sub_train_run_2
 
 
 # 2. Main-Exp
@@ -20,16 +39,16 @@ SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_2
 # Run Instructions: (Specified AUDIODRIVER for my PC - configure based on stim pc)
 cd main-exp
 
-SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_1
-SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_2
-SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_3
-SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_4
-SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_5
-SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_6
+SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_1
+SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_2
+SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_3
+SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_4
+SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_5
+SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_6
 
 # 3. Localizer
-# 415 s (~8 min) total:
-# Visual 95 s - 3 s before first block, 8.6 sec per block (0.6 stim + 8 rest)
+# 412 s (~8 min) total:
+# Visual 92 s - 3 s before first block, 8.6 sec per block (0.6 stim + 8 rest)
 # Audio	 320 s - 1.5 s before first block, 11.5 s per block (3.5 s stim + 6 rest)
 # Run Instructions:
 cd localizer/visual

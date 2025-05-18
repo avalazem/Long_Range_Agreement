@@ -1,0 +1,37 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Fri May 16 2025 18:22:24
+#sha1: 43f017
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-25-generic', version='#25-Ubuntu SMP PREEMPT_DYNAMIC Fri Apr 11 23:29:18 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+502,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions.png
+534,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+539,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+543,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+548,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+618,stdout,received,'Total number of trials: 10'
+618,stdout,received,'Expected Total duration: 130.00 s'
+1870,design,log,
+#design: #exp: Long-Range Agreement - Sub train Run 1)
+#design: block_cnt,block_id,trial_cnt,trial_id
+1871,design,logged,
+1871,Experiment,started
+1885,Stimulus,presented,2
+2473,Keyboard,received,32,wait
+2488,Stimulus,presented,59
+2993,Keyboard,received,116,wait
+3131,Keyboard,received,116,wait
+3280,Keyboard,received,116,wait
+3304,Stimulus,presented,0
+5304,stdout,received,'Starting main trial loop...'
+5304,stdout,received,'Trial 1 Target: 2000.00 Actual: 2024.00 Delta: 24.00'
+5304,stdout,received,'Presenting cue for modality: auditory'
+5329,Stimulus,presented,4
+5329,Experiment,paused
+5346,Stimulus,presented,60
+6392,Keyboard,received,n,wait_char
+6392,Experiment,resumed
+6392,Keyboard,received,27,check
+6392,Experiment,ended
+6418,Stimulus,presented,60
