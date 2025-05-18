@@ -28,8 +28,8 @@
 
 # Run Instructions:
 
-SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/training/sub_train_run_1
-SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/training/sub_train_run_2
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_1 [--invert_hands]
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/training/sub_train_run_2 [--invert_hands]
 
 
 # 2. Main-Exp
@@ -39,12 +39,12 @@ SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/training
 # Run Instructions: (Specified AUDIODRIVER for my PC - configure based on stim pc)
 cd main-exp
 
-SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_1
-SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_2
-SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_3
-SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_4
-SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_5
-SDL_AUDIODRIVER=alsa python Code/long_range.py [--invert_hands] Stimuli/subject_01/sub_01_run_6
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_1 [--invert_hands]
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_2 [--invert_hands]
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_3 [--invert_hands]
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_4 [--invert_hands]
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_5 [--invert_hands]
+SDL_AUDIODRIVER=alsa python Code/long_range.py Stimuli/subject_01/sub_01_run_6 [--invert_hands]
 
 # 3. Localizer
 # 412 s (~8 min) total:

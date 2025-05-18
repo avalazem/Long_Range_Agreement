@@ -13,10 +13,35 @@ import sys
 import re
 from pathlib import Path
 import pandas as pd
-from expyriment import design, control, stimuli, misc, io, stimuli
+from expyriment import design, control, stimuli, misc, io
+import argparse
 import random # Import random explicitly
 
 script_dir = Path(__file__).parent.resolve()
+
+# --- Argument Parsing ---
+# Moved and consolidated argument parsing to the beginning of the script.
+parser = argparse.ArgumentParser(
+    description="Long-Range Agreement Experiment. \\nUsage: python long_range.py <run_folder_path> [--invert_hands]",
+    formatter_class=argparse.RawTextHelpFormatter
+)
+parser.add_argument(
+    "run_folder_path",
+    type=str,
+    help="Path to the directory containing the stimulus CSV file and .wav audio files.\\n(e.g., ../Stimuli/subject_01/visual/sub1_run1_visual)"
+)
+parser.add_argument(
+    "--invert_hands",
+    action="store_true",
+    help="Use inverted hands instruction image."
+)
+args = parser.parse_args() # Parse arguments at the beginning
+
+# --- Use parsed arguments ---
+# run_folder_path is now taken from the parsed arguments.
+run_folder_path = Path(args.run_folder_path).resolve()
+# args.invert_hands will be used later where it's already correctly referenced.
+
 
 # Experiment Parameters
 DEBUG = False  # Set to False for fullscreen, True for development mode
@@ -42,18 +67,6 @@ PROBE_DURATION = 1000           # ms, Duration of the probe (based on 'Neural Po
 RESPONSE_DURATION = 2000        # ms, Within rest period, how long to wait for a response AFTER probe
 AUDIO_DURATION = 4000           # ms, Duration of the audio stimulus (like params.audio_duration)
 # ----------------------------------------
-
-# Check for correct usage
-if len(sys.argv) != 2:
-    print("""Usage: python long_range.py <run_folder_path>
-
-Arguments:
-    run_folder_path: Path to the directory containing the stimulus CSV file and .wav audio files.
-                       (e.g., ../Stimuli/subject_01/visual/sub1_run1_visual)
-""")
-    sys.exit(1)
-
-run_folder_path = Path(sys.argv[1]).resolve() # Resolve to absolute path
 
 # Determine modality and base paths
 if not run_folder_path.is_dir():
@@ -156,9 +169,11 @@ end_text = f"Fin de cette partie. Merci!"
 # --- Preload Static Stimuli ---
 fixation_cross.preload()
 blank_screen.preload()
+
 # Preload instruction/feedback text screens
 # Instructions
-instruction_image_path = Path(image_dir) / "instructions.png"
+# Determine instruction image based on --invert_hands argument
+instruction_image_path = Path(image_dir) / ("instructions_invert-hands.png" if args.invert_hands else "instructions.png")
 instructions = stimuli.Picture(str(instruction_image_path))
 instructions.scale_to_fullscreen()
 instructions.preload()
@@ -175,7 +190,6 @@ modality_cues = {'visual': visual_cue, 'auditory': auditory_cue} # Store cues in
 # Preload ready and end text screens
 stimuli.TextLine(ready_text).preload()
 stimuli.TextScreen("Fin", end_text).preload()
-
 
 # --- Preload Trial Stimuli ---
 preloaded_stimuli = {} # Dictionary to hold preloaded stimuli for each trial
@@ -292,6 +306,8 @@ for index, trial_data in stim_df.iterrows():
 # So, it represents the end of the last trial's ITI.
 expected_total_duration = current_target_onset + FINAL_WAIT # Add final wait buffer
 
+print(f"Subject ID: {subject_id}")
+print(f"Run Number: {run_number}")
 print(f"Total number of trials: {num_trials}")
 print(f"Expected Total duration: {expected_total_duration / 1000.0:.2f} s")
 
