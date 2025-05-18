@@ -1,0 +1,38 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Sun May 18 2025 18:30:55
+#sha1: 9d0549
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-25-generic', version='#25-Ubuntu SMP PREEMPT_DYNAMIC Fri Apr 11 23:29:18 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+390,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions_invert-hands.png
+423,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+428,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+432,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+437,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+517,stdout,received,'Subject ID: train'
+517,stdout,received,'Run Number: 1'
+517,stdout,received,'Total number of trials: 10'
+517,stdout,received,'Expected Total duration: 130.00 s'
+1426,design,log,
+#design: #exp: Long-Range Agreement - Sub train Run 1)
+#design: block_cnt,block_id,trial_cnt,trial_id
+1426,design,logged,
+1426,Experiment,started
+1442,Stimulus,presented,2
+1626,Keyboard,received,32,wait
+1651,Stimulus,presented,59
+2110,Keyboard,received,116,wait
+2232,Keyboard,received,116,wait
+2341,Keyboard,received,116,wait
+2356,Stimulus,presented,0
+4356,stdout,received,'Starting main trial loop...'
+4356,stdout,received,'Trial 1 Target: 2000.00 Actual: 2015.00 Delta: 15.00'
+4356,stdout,received,'Presenting cue for modality: auditory'
+4385,Stimulus,presented,4
+5404,Stimulus,presented,0
+5746,Experiment,paused
+5771,Stimulus,presented,60
+5907,Keyboard,received,y,wait_char
+5907,Experiment,ended
+5944,Stimulus,presented,60
