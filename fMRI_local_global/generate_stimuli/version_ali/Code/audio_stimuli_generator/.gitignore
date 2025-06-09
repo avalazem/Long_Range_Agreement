@@ -1,4 +1,4 @@
 config.py
-logs
-data
-events
+logs/
+data/
+events/
