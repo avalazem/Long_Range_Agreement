@@ -15,6 +15,7 @@ from google.auth.credentials import Credentials
 from google.auth.transport.requests import Request
 import random # Add random import
 import glob # Add glob import
+import config # Import the configuration file
 # =============================================================================
 # ADDD CREDENTIALS
 
@@ -31,7 +32,7 @@ class APIKeyCredentials(Credentials):
         headers['x-goog-api-key'] = self._api_key
 
 # Set API key
-api_key = "API_KEY"
+api_key = config.API_KEY # Load API key from config file
 
 # Create credentials from the API key
 credentials = APIKeyCredentials(api_key)
