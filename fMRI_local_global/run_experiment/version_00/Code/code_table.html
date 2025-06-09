@@ -1,0 +1,117 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#93a1a1;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#93a1a1;color:#002b36;background-color:#fdf6e3;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#93a1a1;color:#fdf6e3;background-color:#657b83;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-c3ow">Function name</th>
+    <th class="tg-c3ow">Parent</th>
+    <th class="tg-c3ow">Children</th>
+    <th class="tg-c3ow">Use</th>
+    <th class="tg-c3ow">Input</th>
+    <th class="tg-c3ow">Output</th>
+    <th class="tg-c3ow">Notes</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">runLocalGlobalParadigm</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">All</td>
+    <td class="tg-c3ow">The wrapper function of the paradigm.</td>
+    <td class="tg-c3ow"><br><span style="font-weight:bold"> ----------- GUI based INPUT ---------</span><br><br>subject:  [String] - e.g: "01"<br>session: [String] - e.g: "01"<br>triggers- [Binary] <br>training: [Binary]<br></td>
+    <td class="tg-c3ow"><br>.CSV files at the directories "Behavioral" and "Logs".<br>1.triggers: [Binary]<br><br>2.training: [Binary]<br>3.debug_mode: [Binary]<br><br></td>
+    <td class="tg-c3ow">Select the running mode here.<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">getParamsLocalGlobalParadigm </td>
+    <td class="tg-c3ow">runLocalGlobalParadigm</td>
+    <td class="tg-c3ow">convert_toRR</td>
+    <td class="tg-c3ow"><br>Set general parameters such as: <br><br>1. Method - e.g: "iEEG"<br>2. Refresh rate - e.g 60<br>3. Paths (No need to change anything)<br>4. Use of Photodiode. <br><br>5. Input (e.g: Serial USB)<br>6. Text presentation parameters. <br><br>7. Timing parameters (Word ON, etc)<br>8. Trigger values.</td>
+    <td class="tg-c3ow">debug_mode: [Binary]<br></td>
+    <td class="tg-c3ow"><br>1. Params: [Struct ] - Contains the values of the parameters (see USE)<br>2. Events:  [Struct]&nbsp;&nbsp;- Contains the trigger values.&nbsp;&nbsp;<br></td>
+    <td class="tg-c3ow">Set the parameters of the experiment here.</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">convert_toRR</td>
+    <td class="tg-c3ow">getParamsLocalGlobalParadigm</td>
+    <td class="tg-c3ow">-</td>
+    <td class="tg-c3ow">Convert the specified timings to round multiples <br>of the refresh rate</td>
+    <td class="tg-c3ow">params: [Struct]</td>
+    <td class="tg-c3ow">params: [Struct]</td>
+    <td class="tg-c3ow">It is important to provide an accurate <br>Refresh Rate value to avoid timing issues.</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">initialize_TTL_hardware</td>
+    <td class="tg-baqh">runLocalGlobalParadigm</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh">Initialize the TTL hardware per specified <br>recording location (e.g: "NeuroSpin")<br></td>
+    <td class="tg-baqh"><br>1. triggers: [Binary] <br>2. params: [Struct]<br>3. events:&nbsp;&nbsp;[Struct]</td>
+    <td class="tg-baqh">handles: [Struct] - Contains the specified<br>TTL interface configuration.<br></td>
+    <td class="tg-baqh"><br>If your location is not included make a new<br>case here.<br></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">send_trigger</td>
+    <td class="tg-baqh">runLocalGlobalParadigm</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh">Specify the way that the TTL pulse will be sent.</td>
+    <td class="tg-baqh">1. triggers : [Binary]<br>2. handles: [Struct]<br>3. params: [Struct]<br>4. events: [Struct]<br>5. event_name: [String]-@params<br>6. wait_secs: [String]-@params</td>
+    <td class="tg-baqh">Sends a pulse to the TTL channel.</td>
+    <td class="tg-baqh">If your location is not included make a new<br>case here.</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">createLogFileLocalGlobalParadigm</td>
+    <td class="tg-baqh"><br>runLocalGlobalParadigm</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh"><br>Write the Log-file that contains information re<br>the paradigm.<br></td>
+    <td class="tg-baqh">params: [Struct]</td>
+    <td class="tg-baqh">fid: [File Identifier]</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">load_stimuliLocalGlobal</td>
+    <td class="tg-baqh">runLocalGlobalParadigm</td>
+    <td class="tg-baqh"></td>
+    <td class="tg-baqh">Load the visual stimuli and outputs them as <br>Cell of cells.<br></td>
+    <td class="tg-baqh"><br>1.training_trials.csv<br>2. params<br></td>
+    <td class="tg-baqh"><br>1. stimuli_words: [Cell] -cell for each sentence, containing cells for each word<br>2. stimuli_datasets: [Table] - Update later with behavioral measures and the RT<br>3. training_words: [Cell] -cell for each sentence, containing cells for each word</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Initialize_PTB_devices</td>
+    <td class="tg-baqh">runLocalGlobalParadigm</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh"><br>Set parameters such as:<br>1. Screen text rendering<br>2. Debug mode screen tests.<br>3. Text font/size/style.<br>4. Keyboard input.<br></td>
+    <td class="tg-baqh"><br>1. handles: [Struct]<br>2. debug_mode: [Binary]<br></td>
+    <td class="tg-baqh">handles: [Struct]</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">run_training_block</td>
+    <td class="tg-baqh">runLocalGlobalParadigm</td>
+    <td class="tg-baqh">present_intro_slide<br></td>
+    <td class="tg-baqh">Uses the training stimuli to run a series of <br>training trials.<br></td>
+    <td class="tg-baqh"><br>1. handles: [Struct]<br>2. training_trials: [Cell]<br>3. params: [Struct]<br></td>
+    <td class="tg-baqh">Feedback on the screen.</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">present_intro_slide</td>
+    <td class="tg-baqh">1.run_training_block<br>2.run_visual_block</td>
+    <td class="tg-baqh">-<br></td>
+    <td class="tg-baqh">Presents the instructions </td>
+    <td class="tg-baqh">instructions_sentences.png-@/Stimuli.</td>
+    <td class="tg-baqh">Reads the .png and projects it on the screen</td>
+    <td class="tg-baqh"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">run_visual_block</td>
+    <td class="tg-baqh">runLocalGlobalParadigm</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh">The<span style="font-weight:bold"> main presentation function.</span></td>
+    <td class="tg-baqh"><br>1.handles: [Struct]<br>2. block: [Int] <br>3. stimuli_words - [Cell] <br>4. VisualTrialOrder [Int] - @runLocal..<br>5. fid [File Identifier]<br>6. triggers [Binary]<br>7. cumTrial [Int]<br>8. params [Struct]<br>9. events [String] -@params<br>10. stimuli_datasets: [Table]</td>
+    <td class="tg-baqh"><br>Projects the stimuli on the screen using RSVP and receives input from the user. <br><br>Provides feedback to the user. <br><br>Updates the stimuli_datasets with the Behavioral Performance <br>(True/False-Positive/Negative)<br>Saves the Log file in the "Logs" directory. <br><br>Saves the updated datasets as a .csv in the "Behavioral" directory.<br></td>
+    <td class="tg-baqh"></td>
+  </tr>
+</table>

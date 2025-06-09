@@ -1,0 +1,22 @@
+Event	Block	Trial	StimNum	WordNum	Time	Condition	Token	Base_condition	Embedding	G_number	Block_type	Trial_type
+Fix	2	1	0	0	1611513121.3747	filler_obj_plur	+	filler	obj	plur	auditory	number
+AudioOnset	2	1	0	0	1611513122.0049	filler_obj_plur	+	filler	obj	plur	auditory	number
+AudioOffset	2	1	0	0	1611513125.3638	filler_obj_plur	+	filler	obj	plur	auditory	number
+Fix2DecisionON	2	1	0	0	1611513125.3747	filler_obj_plur	+	filler	obj	plur	auditory	number
+PanelOn	2	1	0	0	1611513125.8747	filler_obj_plur	Panel	filler	obj	plur	auditory	number
+KeyPress	2	1	0.61856	0	1611513126.4933	filler_obj_plur	Left	filler	obj	plur	number
+FixFeedbackOn	2	1	0	0	1611513126.5247	filler_obj_plur	FN	filler	obj	plur	number
+Fix	2	2	0	0	1611513129.008	GSLS_pp_sing	+	GSLS	pp	sing	auditory	number
+AudioOnset	2	2	0	0	1611513129.6376	GSLS_pp_sing	+	GSLS	pp	sing	auditory	number
+AudioOffset	2	2	0	0	1611513133.1942	GSLS_pp_sing	+	GSLS	pp	sing	auditory	number
+Fix2DecisionON	2	2	0	0	1611513133.208	GSLS_pp_sing	+	GSLS	pp	sing	auditory	number
+PanelOn	2	2	0	0	1611513133.7081	GSLS_pp_sing	Panel	GSLS	pp	sing	auditory	number
+FixFeedbackOn	2	2	0	0	1611513135.7081	GSLS_pp_sing	NR	GSLS	pp	sing	number
+Fix	2	3	0	0	1611513138.1914	GDLS_obj_plur	+	GDLS	obj	plur	auditory	number
+AudioOnset	2	3	0	0	1611513138.8193	GDLS_obj_plur	+	GDLS	obj	plur	auditory	number
+AudioOffset	2	3	0	0	1611513142.4166	GDLS_obj_plur	+	GDLS	obj	plur	auditory	number
+Fix2DecisionON	2	3	0	0	1611513142.4247	GDLS_obj_plur	+	GDLS	obj	plur	auditory	number
+PanelOn	2	3	0	0	1611513142.9247	GDLS_obj_plur	Panel	GDLS	obj	plur	auditory	number
+FixFeedbackOn	2	3	0	0	1611513144.9247	GDLS_obj_plur	NR	GDLS	obj	plur	number
+Fix	2	4	0	0	1611513147.4081	GDLS_obj_sing	+	GDLS	obj	sing	auditory	number
+AudioOnset	2	4	0	0	1611513148.0359	GDLS_obj_sing	+	GDLS	obj	sing	auditory	number

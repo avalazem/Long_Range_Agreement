@@ -1,0 +1,6 @@
+,trial,condition,structure,filler,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,run_type
+3,trial_4,GSLS,pp,no,no,yes,no,None,sing,sing,sing,danseur,médecin,sert,Un danseur proche du médecin sert ce pompier.,auditory
+5,trial_6,GDLD,pp,no,yes,yes,yes,6,sing,sing,plur,boucher,coiffeur,plaignent,Le boucher auprès du coiffeur plaignent ce matelot.,auditory
+15,trial_16,GDLD,obj,no,yes,yes,yes,6,sing,sing,plur,facteur,médecin,punissent,Le facteur que ce médecin punissent écrit rarement.,auditory
+26,trial_27,GSLS,pp,no,no,yes,no,None,sing,sing,sing,chef,gardien,entend,Le chef proche du gardien entend un marin.,auditory
+27,trial_28,pp_filler,pp,yes,yes,None,None,5,plur,sing,plur,bouchers,peignent,reçoivent,Des bouchers loin des peignent reçoivent des soldats.,auditory

@@ -1,0 +1,11 @@
+infinitive,third_s,third_p,levenshtein,infitive_freq,third_s_nl,third_p_nl,l_difference,english,transitivity,goes_with
+mentir,ment,mentent,3,42.12,4,7,3,lie,intransitive,"parfois, toujours, souvent, rarement"
+vomir,vomit,vomissent,4,5.19,5,9,4,to vomit,transitive,"parfois, souvent, encore, partout"
+partir,part,partent,3,109.45,4,7,3,go,intransitive,"demain, lentement"
+répondre,répond,répondent,3,27.42,6,9,3,reply,transitive,"lentement, aussitôt, rarement"
+écrire,écrit,écrivent,3,1.77,5,8,3,to write,transitive,"parfois, toujours, souvent, rarement"
+savoir,sait,savent,3,14.39,4,6,2,know,transitive,"conduire, nager, cuisiner, danser"
+devoir,doit,doivent,3,13.59,4,7,3,must,transitive,"partir, payer, manger, dormir"
+vouloir,veut,veulent,3,10.13,4,7,3,want,transitive,"partir, mourir, manger, dormir"
+repartir,repart,repartent,3,6.61,6,9,3,go back to,transitive,"aussitôt, dehors, déjà, demain"
+peindre,peint,peignent,3,0.16,5,8,3,to paint,transitive,"parfois, toujours, souvent, rarement"

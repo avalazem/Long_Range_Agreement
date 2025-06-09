@@ -1,0 +1,17 @@
+infinitive,third_s,third_p,levenshtein,infitive_freq,third_s_nl,third_p_nl,l_difference,english,transitivity,
+suivre,suit,suivent,3,1819.44,4,7,3,to follow,transitive,OK
+attendre,attend,attendent,3,173.86,6,9,3,wait for,transitive,OK
+servir,sert,servent,3,44.58,4,7,3,to serve,transitive,OK
+entendre,entend,entendent,3,41.77,6,9,3,hear,intransitive/transitive,OK
+haïr,hait,haïssent,5,31.21,4,8,4,hate,transitive,OK
+bénir,bénit,bénissent,4,10.9,5,9,4,bless,transitive,OK
+punir,punit,punissent,4,10.09,5,9,4,to punish,transitive,OK
+défendre,défend,défendent,3,7,6,9,3,defend,transitive,OK
+craindre,craint,craignent,3,0.82,6,9,3,to fear,transitive,OK
+recevoir,reçoit,reçoivent,3,0.32,6,9,3,to receive,transitive,OK
+plaindre,plaint,plaignent,3,0.28,6,9,3,complain,transitive,OK
+séduire,séduit,séduisent,3,0.16,6,9,3,seduce,transitive,OK
+émouvoir,émeut,émeuvent,3,0.14,5,8,3,move,transitive,OK
+endormir,endort,endorment,3,0.14,6,9,3,fall asleep,transitive,OK
+décrire,décrit,décrivent,3,0.04,6,9,3,to describe,transitive,OK
+élire,élit,élisent,3,0.01,4,7,3,elect,transitive,OK

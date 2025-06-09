@@ -1,0 +1,9 @@
+,condition,structure,filler,violation,congruency,interference,viol_loc,n1_number,n2_number,v1_number,n1,n2,v1,sentence,soa
+2,GSLS,pp,no,no,yes,no,None,plur,plur,plur,marins,médecins,suivent,Les marins proche des médecins suivent les patients.,500
+4,pp_filler,pp,yes,yes,None,None,5,plur,sing,plur,libraires,vomissent,plaignent,Ces libraires loin des vomissent plaignent des patients.,500
+6,GDLD,pp,no,yes,yes,yes,6,sing,sing,plur,chef,facteur,élisent,Ce chef proche du facteur élisent le gérant.,500
+8,GSLD,pp,no,no,no,yes,None,sing,plur,sing,champion,coiffeurs,séduit,Ce champion proche des coiffeurs séduit ce soldat.,500
+9,GDLD,obj,no,yes,yes,yes,6,sing,sing,plur,pompier,prêtre,servent,Le pompier que le prêtre servent ment parfois.,500
+16,GSLS,obj,no,no,yes,no,None,sing,sing,sing,comédien,marchand,bénit,Le comédien que ce marchand bénit peint souvent.,500
+17,GSLD,pp,no,no,no,yes,None,plur,sing,plur,dentistes,malade,entendent,Ces dentistes auprès du malade entendent des matelots.,500
+18,GSLD,obj,no,yes,no,no,6,plur,sing,plur,chanteurs,gérant,bénissent,Des chanteurs que ce gérant bénissent écrivent rarement.,500

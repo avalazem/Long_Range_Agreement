@@ -1,0 +1,178 @@
+infinitive,third_s,third_p,levenshtein,infitive_freq,third_s_nl,third_p_nl,l_difference,english,transitivity
+faire,fait,font,2,2735.96,4,4,0,do,transitive
+être,est,sont,3,1849.07,3,4,1,be,intransitive
+suivre,suit,suivent,3,1819.44,4,7,3,to follow,transitive
+pouvoir,peut,peuvent,3,1209.64,4,7,3,can,transitive
+sentir,sent,sentent,3,240.85,4,7,3,feel,intransitive
+attendre,attend,attendent,3,173.86,6,9,3,wait for,transitive
+sortir,sort,sortent,3,156.13,4,7,3,go out,intransitive
+foutre,fout,foutent,3,133.75,4,7,3,fuck,transitive
+partir,part,partent,3,109.45,4,7,3,go,transitive
+mettre,met,mettent,4,89.25,3,7,4,to put,transitive
+rendre,rend,rendent,3,82.91,4,7,3,return,intransitive/transitive
+voir,voit,voient,2,78.66,4,6,2,see,intransitive/transitive
+asseoir,assied,asseyent,4,65.1,6,8,2,sit,transitive
+ouvrir,ouvre,ouvrent,2,56.83,5,7,2,to open,transitive
+dépendre,dépend,dépendent,3,48.3,6,9,3,to depend,transitive
+servir,sert,servent,3,44.58,4,7,3,to serve,transitive
+faillir,faut,faillent,5,42.7,4,8,4,fail,transitive
+mentir,ment,mentent,3,42.12,4,7,3,lie,intransitive
+entendre,entend,entendent,3,41.77,6,9,3,hear,intransitive/transitive
+perdre,perd,perdent,3,39.97,4,7,3,to lose,transitive
+dire,dit,disent,3,36.47,3,6,3,say,transitive
+offrir,offre,offrent,2,34.01,5,7,2,to offer,transitive
+haïr,hait,haïssent,5,31.21,4,8,4,hate,intransitive
+répondre,répond,répondent,3,27.42,6,9,3,reply,transitive
+refaire,refait,refont,2,26.29,6,6,0,redo,transitive
+vendre,vend,vendent,3,22.75,4,7,3,sell,transitive
+pleuvoir,pleut,pleuvent,3,20.5,5,8,3,to rain,transitive/intransitive
+souffrir,souffre,souffrent,2,18.45,7,9,2,suffer,intransitive/transitive
+mourir,meurt,meurent,2,14.97,5,7,2,die,intransitive
+enfuir,enfuit,enfuient,2,14.79,6,8,2,escape,transitive
+couvrir,couvre,couvrent,2,14.62,6,8,2,cover,transitive
+savoir,sait,savent,3,14.39,4,6,2,know,transitive
+revoir,revoit,revoient,2,14.31,6,8,2,see again,intransitive/transitive
+devoir,doit,doivent,3,13.59,4,7,3,must,transitive
+plaire,plaît,plaisent,4,12.63,5,8,3,to please,transitive
+remettre,remet,remettent,4,12.56,5,9,4,put back,transitive
+conclure,conclut,concluent,2,11.88,7,9,2,conclude,transitive
+fuir,fuit,fuient,2,10.68,4,6,2,flee,intransitive/transitive
+vouloir,veut,veulent,3,10.13,4,7,3,want,transitive
+venir,vient,viennent,3,9.96,5,8,3,come,intransitive
+vivre,vit,vivent,3,9.63,3,6,3,live,intransitive
+satisfaire,satisfait,satisfont,2,9.6,9,9,0,satisfy,transitive
+résoudre,résout,résolvent,4,9.28,6,9,3,solve,transitive
+rire,rit,rient,2,8.22,3,5,2,to laugh,intransitive
+mordre,mord,mordent,3,7.95,4,7,3,bite,transitive
+défendre,défend,défendent,3,7,6,9,3,defend,transitive
+repartir,repart,repartent,3,6.61,6,9,3,go back to,transitive
+croire,croit,croient,2,5.43,5,7,2,believe,intransitive/transitive
+luire,luit,luisent,3,5.41,4,7,3,glow,intransitive
+défaire,défait,défont,2,5.26,6,6,0,undo,transitive
+étendre,étend,étendent,3,4.98,5,8,3,to expand,transitive
+suffire,suffit,suffisent,3,4.52,6,9,3,suffice,intransitive/transitive
+répandre,répand,répandent,3,4.14,6,9,3,spread,transitive
+tendre,tend,tendent,3,3.72,4,7,3,tender,transitive
+tenir,tient,tiennent,3,3.56,5,8,3,hold,transitive
+exclure,exclut,excluent,2,3.21,6,8,2,exclude,transitive
+détendre,détend,détendent,3,3.21,6,9,3,relax,intransitive
+sourire,sourit,sourient,2,3.19,6,8,2,smile,intransitive/transitive
+valoir,vaut,valent,3,3.04,4,6,2,worth,transitive
+boire,boit,boivent,3,2.97,4,7,3,to drink,transitive
+admettre,admet,admettent,4,2.83,5,9,4,admit,transitive
+pendre,pend,pendent,3,2.5,4,7,3,hang,transitive
+fondre,fond,fondent,3,2.38,4,7,3,to melt,intransitive
+tordre,tord,tordent,3,2.08,4,7,3,twist,transitive
+lire,lit,lisent,3,1.88,3,6,3,read,transitive
+émettre,émet,émettent,4,1.85,4,8,4,issue,transitive
+écrire,écrit,écrivent,3,1.77,5,8,3,to write,transitive
+courir,court,courent,2,1.54,5,7,2,run,intransitive
+repentir,repent,repentent,3,1.47,6,9,3,,
+dormir,dort,dorment,3,1.45,4,7,3,to sleep,intransitive
+survivre,survit,survivent,3,1.33,6,9,3,to survive,intransitive
+nuire,nuit,nuisent,3,1.31,4,7,3,harm,transitive
+retordre,retord,retordent,3,1.29,6,9,3,twist,transitive
+fendre,fend,fendent,3,1.2,4,7,3,split,transitive
+pondre,pond,pondent,3,1.18,4,7,3,lay,intransitive
+craindre,craint,craignent,3,0.82,6,9,3,to fear,transitive
+éclore,éclot,éclosent,3,0.82,5,8,3,hatch,transitive
+coudre,coud,cousent,4,0.63,4,7,3,to sew,transitive
+rouvrir,rouvre,rouvrent,2,0.62,6,8,2,reopen,transitive
+départir,départ,départent,3,0.62,6,9,3,to leave,intransitive
+parfaire,parfait,parfont,2,0.58,7,7,0,perfect,transitive
+naître,naît,naissent,5,0.57,4,8,4,be born,intransitive
+réduire,réduit,réduisent,3,0.53,6,9,3,reduce,transitive
+ensuivre,ensuit,ensuivent,3,0.52,6,9,3,to follow,transitive
+rasseoir,rassied,rasseyent,4,0.52,7,9,2,re-setter,intransitive
+revendre,revend,revendent,3,0.51,6,9,3,resell,transitive
+tondre,tond,tondent,3,0.48,4,7,3,mow,transitive
+redire,redit,redisent,3,0.47,5,8,3,to repeat,transitive
+remordre,remord,remordent,3,0.43,6,9,3,regret,transitive
+paître,paît,paissent,5,0.39,4,8,4,graze,?
+moudre,moud,moulent,4,0.38,4,7,3,grind,Intransitive ?
+démentir,dément,démentent,3,0.37,6,9,3,deny,transitive
+cuire,cuit,cuisent,3,0.35,4,7,3,cook,transitive
+braire,brait,braient,2,0.34,5,7,2,bray,intransitive
+choir,choit,choient,2,0.33,5,7,2,choose,transitive
+recevoir,reçoit,reçoivent,3,0.32,6,9,3,to receive,transitive
+plaindre,plaint,plaignent,3,0.28,6,9,3,complain,transitive
+traire,trait,traient,2,0.27,5,7,2,to milk,transitive
+gésir,gît,gisent,4,0.26,3,6,3,lie,intransitive/transitive
+taire,tait,taisent,3,0.22,4,7,3,to hush up,intransitive
+échoir,échoit,échoient,2,0.2,6,8,2,expire,intransitive
+extraire,extrait,extraient,2,0.19,7,9,2,extract,transitive
+éteindre,éteint,éteignent,3,0.18,6,9,3,switch off,transitive
+reboire,reboit,reboisent,3,0.17,6,9,3,drink again,transitive
+peindre,peint,peignent,3,0.16,5,8,3,to paint,transitive
+séduire,séduit,séduisent,3,0.16,6,9,3,seduce,transitive
+éperdre,éperd,éperdent,3,0.16,5,8,3,lose,transitive/intransitive
+endormir,endort,endorment,3,0.14,6,9,3,fall asleep,intransitive
+vaincre,vainc,vainquent,5,0.14,5,9,4,conquer,transitive
+refondre,refond,refondent,3,0.14,6,9,3,redesign,transitive
+teindre,teint,teignent,3,0.14,5,8,3,stain,transitive
+émouvoir,émeut,émeuvent,3,0.14,5,8,3,move,transitive
+rompre,rompt,rompent,2,0.13,5,7,2,to break up,intransitive
+omettre,omet,omettent,4,0.13,4,8,4,omit,transitive
+recoudre,recoud,recousent,4,0.11,6,9,3,stitch,transitive
+poindre,point,poignent,3,0.11,5,8,3,dawn,intransitive
+médire,médit,médisent,3,0.11,5,8,3,mediate,intransitive
+feindre,feint,feignent,3,0.11,5,8,3,pretend,intransitive
+recourir,recourt,recourent,2,0.1,7,9,2,use,transitive
+réélire,réélit,réélisent,3,0.1,6,9,3,re-elect,intransitive
+surseoir,sursoit,sursoient,2,0.1,7,9,2,suspend,transitive
+joindre,joint,joignent,3,0.1,5,8,3,join,transitive
+déduire,déduit,déduisent,3,0.05,6,9,3,deduct,transitive
+ouïr,oit,oient,2,0.05,3,5,2,hear,transitive/intransitive
+démordre,démord,démordent,3,0.05,6,9,3,twist,transitive
+relire,relit,relisent,3,0.04,5,8,3,reread,transitive
+accourir,accourt,accourent,2,0.04,7,9,2,browse,transitive
+ascendre,ascend,ascendent,3,0.04,6,9,3,ascend,transitive
+revouloir,reveut,reveulent,3,0.04,6,9,3,come back,intransitive
+démettre,démet,démettent,4,0.04,5,9,4,dismiss,transitive
+décrire,décrit,décrivent,3,0.04,6,9,3,to describe,transitive
+encourir,encourt,encourent,2,0.03,7,9,2,incur,transitive
+récrire,récrit,récrivent,3,0.03,6,9,3,rewrite,transitive
+attraire,attrait,attraient,2,0.02,7,9,2,attract,transitive
+émoudre,émoud,émoulent,4,0.02,5,8,3,emulate,transitive
+mouvoir,meut,meuvent,3,0.02,4,7,3,move,transitive
+recuire,recuit,recuisent,3,0.02,6,9,3,anneal,transitive
+reluire,reluit,reluisent,3,0.02,6,9,3,read more at,transitive
+cueillir,cueille,cueillent,2,0.02,7,9,2,gather,transitive
+enduire,enduit,enduisent,3,0.01,6,9,3,smear,intransitive
+prendre,prend,prennent,4,0.01,5,8,3,take,transitive
+redormir,redort,redorment,3,0.01,6,9,3,sleep again,intransitive
+dédire,dédit,dédisent,3,0.01,5,8,3,to say,transitive
+retraire,retrait,retraient,2,0.01,7,9,2,Retrieve,transitive
+déclore,déclot,déclosent,3,0.01,6,9,3,decorate,transitive
+détordre,détord,détordent,3,0.01,6,9,3,untangle,transitive
+clore,clôt,closent,4,0.01,4,7,3,close,transitive
+élire,élit,élisent,3,0.01,4,7,3,elect,transitive
+confire,confit,confisent,3,0.01,6,9,3,confide,transitive
+prédire,prédit,prédisent,3,0.01,6,9,3,to predict,transitive
+prévaloir,prévaut,prévalent,3,0.01,7,9,2,prevail,intransitive
+secourir,secourt,secourent,2,0,7,9,2,to rescue,transitive
+éprendre,éprend,éprennent,4,0,6,9,3,experience,transitive
+épandre,épand,épandent,3,0,5,8,3,spread,intransitive
+seoir,sied,siéent,3,0,4,6,2,sit,transitive/intransitive
+absoudre,absout,absolvent,4,0,6,9,3,absolve,intransitive
+croître,croît,croissent,5,0,5,9,4,grow,intransitive
+découdre,découd,décousent,4,0,6,9,3,visit,transitive/intransitive
+déchoir,déchoit,déchoient,2,0,7,9,2,decay,intransitive
+décevoir,déçoit,déçoivent,3,0,6,9,3,disappoint,intransitive
+chauvir,chauvit,chauvent,2,0,7,8,1,,
+ceindre,ceint,ceignent,3,0,5,8,3,ring,transitive
+bouillir,bout,bouillent,5,0,4,9,5,boil,intransitive
+ardre,ard,ardent,3,0,3,6,3,,
+appendre,append,appendent,3,0,6,9,3,to learn,transitive
+enclore,enclôt,enclosent,4,0,6,9,3,hides,intransitive
+revivre,revit,revivent,3,0,5,8,3,relive,intransitive
+retendre,retend,retendent,3,0,6,9,3,tighten,transitive
+rependre,repend,rependent,3,0,6,9,3,retake,transitive
+redevoir,reçoit,reçoivent,3,0,6,9,3,redesign,transitive
+prévoir,prévoit,prévoient,2,0,7,9,2,provide,transitive
+oindre,oint,oignent,3,0,4,7,3,,
+mécroire,mécrait,mécront,2,0,7,7,0,sponsor,transitive
+induire,induit,induisent,3,0,6,9,3,induce,transitive
+inclure,inclut,incluent,2,0,6,8,2,include,transitive
+geindre,geint,geignent,3,0,5,8,3,moan,intransitive
+occlure,occlut,occluent,2,0,6,8,2,occlude,transitive

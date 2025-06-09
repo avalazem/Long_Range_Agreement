@@ -1,0 +1,148 @@
+function handles = Initialize_PTB_devices(params, handles, debug_mode)
+
+
+%% AUDIO
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% ADDITIONS FROM MINYE
+
+channels=2;
+volume=1;
+
+clear PsychPortAudio;
+audiodevices=PsychPortAudio('GetDevices');
+audiodevicenames={audiodevices.DeviceName};
+% [logicalaudio,locationaudio]=ismember({'Aureon5.1MkII: USB Audio (hw:2,0)'},audiodevicenames);
+[logicalaudio,locationaudio]=ismember({'Realtek ASIO'},audiodevicenames); % temporary
+% audiodeviceindex=audiodevices(locationaudio).DeviceIndex;% temporary
+audiodeviceindex=-1;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+InitializePsychSound(1);
+port=5;
+handles.pahandle = PsychPortAudio('Open', port, [], 2, params.freq, params.audioChannels, 1); 
+
+
+%% SCREEN
+Screen('Preference', 'TextRenderer', 1);
+screens = Screen('Screens');
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% ADDITIONS FROM MINYE
+
+handles.rendershift=4; % in pixels, specific for text renderer 1. 
+handles.distance=195;% temporary
+handles.screenwid=69.84; % temporary
+handles.screenpx=1920; % temporary
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+handles.screenNumber = max(screens);
+handles.black = BlackIndex(handles.screenNumber);
+handles.white = WhiteIndex(handles.screenNumber);
+
+
+rect = get(0, 'ScreenSize');
+if debug_mode
+    Screen('Preference', 'SkipSyncTests', 1);
+    handles.rect = [0 0 rect(3:4)./2];
+    handles.win = Screen('OpenWindow',handles.screenNumber, handles.black, handles.rect);
+else
+    Screen('Preference', 'SkipSyncTests', 0);  % REMEMBER TO HAVE THAT SET TO 0!
+    handles.rect = [0 0 rect(3:4)];
+    handles.win = Screen('OpenWindow',handles.screenNumber, handles.black);
+end
+
+
+%% TEXT ON SCREEN
+Screen('TextFont',handles.win, 'Arial');
+Screen('TextSize',handles.win, 120);   % 160 --> ~25mm text height (from top of `d' to bottom of `g').
+Screen('TextStyle', handles.win, 1);   % 0=normal text style. 1=bold. 2=italic.
+
+%% KEYBOARD
+handles.escapeKey = KbName('ESCAPE');
+handles.LKey = KbName('LeftArrow');
+handles.RKey = KbName('RightArrow');
+handles.Key  = KbName('space');
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% ADDITIONS FROM MINYE
+
+% check FORP key devices and get device indices
+clear PsychHID; 
+[keyboardIndices, productNames, allInfos] = GetKeyboardIndices;
+[logicalTrig,locationTrig]=ismember({'Current Designs, Inc. TRIGI-USB'},productNames);% trigger device
+[logicalButt,locationButt]=ismember({'Arduino LLC Arduino Leonardo'},productNames);% 2-button device
+[logicalKey,locationKey]=ismember({'Dell Dell USB Keyboard'},productNames);% PC keyboard
+
+
+devicenumtrigger=allInfos{locationTrig}.index;
+devicenum=allInfos{locationButt}.index;
+devicenumkey=allInfos{locationKey}.index;
+
+handles.devicenumtrigger=devicenumtrigger;
+handles.devicenum=devicenum;
+
+
+
+% define the corresponding keys of the button box here
+% use KbName('KeyNames') to check the key correspondence in the current system
+trigger='t'; % scanner trigger key value
+esckey='ESCAPE'; % escape key
+spacekey='space'; % space key
+button1='b'; % MR response buttons
+button2='y';
+button3='g';
+button4='r';
+button5=',<';
+
+% mapping response buttons defined above. 
+% here, b, y, g, r, ,< mapped to value 1-5;
+keysOfInterestResp=zeros(1,256);
+keysResp={esckey,button1,button2,button3,button4,button5}; 
+keysOfInterestResp(KbName(keysResp))=1;
+keycodemapping=zeros(1,256);
+keycodemappingind=zeros(1,length(keysResp)-1);
+
+for kmind=2:length(keysResp)
+    keycodemappingind(kmind-1)=KbName(keysResp{kmind});
+    keycodemapping(KbName(keysResp{kmind}))=kmind-1;
+end
+
+
+% stimsize=ceil(22/640*screenpx); % font size
+stimsize=48;
+stimcolor=[255 255 255];
+BGcolor=[0 0 0];
+fixcolor=[255 255 255]; % category localizer: [26 167 19];
+% fixsize=7/640*screenpx;
+instructsize=30;
+fixwidth=48;
+fixthick=4;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
