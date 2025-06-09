@@ -1,0 +1,178 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpe-file, coding: UTF-8
+#date: Wed May 21 2025 15:00:19
+#sha1: 9d0549
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Linux', node='Geoff3', release='6.11.0-25-generic', version='#25-Ubuntu SMP PREEMPT_DYNAMIC Fri Apr 11 23:29:18 UTC 2025', machine='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+393,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/instructions_invert-hands.png
+425,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+430,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/visual_cue.png
+434,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+440,Picture,loaded,/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/Input_Images/auditory_cue.png
+509,stdout,received,'Subject ID: train'
+509,stdout,received,'Run Number: 1'
+509,stdout,received,'Total number of trials: 10'
+509,stdout,received,'Expected Total duration: 130.00 s'
+1843,design,log,
+#design: #exp: Long-Range Agreement - Sub train Run 1)
+#design: block_cnt,block_id,trial_cnt,trial_id
+1843,design,logged,
+1843,Experiment,started
+1858,Stimulus,presented,2
+34846,Keyboard,received,32,wait
+34878,Stimulus,presented,59
+37269,Keyboard,received,116,wait
+37513,Keyboard,received,116,wait
+37781,Keyboard,received,116,wait
+37805,Stimulus,presented,0
+39805,stdout,received,'Starting main trial loop...'
+39805,stdout,received,'Trial 1 Target: 2000.00 Actual: 2024.00 Delta: 24.00'
+39805,stdout,received,'Presenting cue for modality: auditory'
+39830,Stimulus,presented,4
+40854,Stimulus,presented,0
+41878,Stimulus,presented,0
+41878,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_1.wav'
+46902,Stimulus,presented,0
+46902,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_1_probe.wav'
+49902,Keyboard,received,None,wait
+49927,Stimulus,presented,0
+51781,stdout,received,'Trial 2 Target: 14000.00 Actual: 14000.00 Delta: 0.00'
+51805,Stimulus,presented,0
+51805,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_2.wav'
+56829,Stimulus,presented,0
+56829,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_2_probe.wav'
+59829,Keyboard,received,None,wait
+59854,Stimulus,presented,0
+63281,stdout,received,'Trial 3 Target: 25500.00 Actual: 25500.00 Delta: 0.00'
+63306,Stimulus,presented,0
+63306,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_3.wav'
+68330,Stimulus,presented,0
+68330,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_3_probe.wav'
+71330,Keyboard,received,None,wait
+71355,Stimulus,presented,0
+74781,stdout,received,'Trial 4 Target: 37000.00 Actual: 37000.00 Delta: 0.00'
+74805,Stimulus,presented,0
+74805,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_4.wav'
+79829,Stimulus,presented,0
+79829,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_4_probe.wav'
+82829,Keyboard,received,None,wait
+82853,Stimulus,presented,0
+87281,stdout,received,'Trial 5 Target: 49500.00 Actual: 49500.00 Delta: 0.00'
+87305,Stimulus,presented,0
+87305,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_5.wav'
+92330,Stimulus,presented,0
+92331,Stimulus,played,b'/home/avalazem/Desktop/Work/Single_Word_Processing_Stage/Long_Range_Agreement/Long_Range_Pilot/Stimuli/training/sub_train_run_1/wavs/trial_5_probe.wav'
+95331,Keyboard,received,None,wait
+95355,Stimulus,presented,0
+100281,stdout,received,'Trial 6 Target: 62500.00 Actual: 62500.00 Delta: 0.00'
+100281,stdout,received,'Presenting cue for modality: visual'
+100305,Stimulus,presented,3
+101329,Stimulus,presented,0
+102353,Stimulus,presented,17
+102577,Stimulus,presented,1
+102801,Stimulus,presented,18
+103025,Stimulus,presented,1
+103249,Stimulus,presented,19
+103473,Stimulus,presented,1
+103697,Stimulus,presented,20
+103921,Stimulus,presented,1
+104145,Stimulus,presented,21
+104369,Stimulus,presented,1
+104593,Stimulus,presented,22
+104817,Stimulus,presented,1
+105041,Stimulus,presented,23
+105265,Stimulus,presented,1
+105488,Stimulus,presented,24
+105712,Stimulus,presented,1
+106937,Stimulus,presented,60
+107961,Stimulus,presented,0
+109961,Keyboard,received,None,wait
+109986,Stimulus,presented,0
+111481,stdout,received,'Trial 7 Target: 73700.00 Actual: 73700.00 Delta: 0.00'
+111505,Stimulus,presented,25
+111729,Stimulus,presented,1
+111953,Stimulus,presented,26
+112177,Stimulus,presented,1
+112401,Stimulus,presented,27
+112625,Stimulus,presented,1
+112849,Stimulus,presented,28
+113073,Stimulus,presented,1
+113297,Stimulus,presented,29
+113521,Stimulus,presented,1
+113745,Stimulus,presented,30
+113969,Stimulus,presented,1
+114193,Stimulus,presented,31
+114417,Stimulus,presented,1
+114641,Stimulus,presented,32
+114865,Stimulus,presented,1
+116090,Stimulus,presented,61
+117115,Stimulus,presented,0
+119115,Keyboard,received,None,wait
+119140,Stimulus,presented,0
+123681,stdout,received,'Trial 8 Target: 85900.00 Actual: 85900.00 Delta: 0.00'
+123705,Stimulus,presented,33
+123929,Stimulus,presented,1
+124153,Stimulus,presented,34
+124377,Stimulus,presented,1
+124601,Stimulus,presented,35
+124825,Stimulus,presented,1
+125049,Stimulus,presented,36
+125273,Stimulus,presented,1
+125497,Stimulus,presented,37
+125721,Stimulus,presented,1
+125945,Stimulus,presented,38
+126169,Stimulus,presented,1
+126393,Stimulus,presented,39
+126617,Stimulus,presented,1
+126841,Stimulus,presented,40
+127065,Stimulus,presented,1
+128290,Stimulus,presented,62
+129314,Stimulus,presented,0
+131314,Keyboard,received,None,wait
+131339,Stimulus,presented,0
+135381,stdout,received,'Trial 9 Target: 97600.00 Actual: 97600.00 Delta: 0.00'
+135406,Stimulus,presented,41
+135630,Stimulus,presented,1
+135854,Stimulus,presented,42
+136078,Stimulus,presented,1
+136302,Stimulus,presented,43
+136526,Stimulus,presented,1
+136750,Stimulus,presented,44
+136974,Stimulus,presented,1
+137198,Stimulus,presented,45
+137422,Stimulus,presented,1
+137646,Stimulus,presented,46
+137870,Stimulus,presented,1
+138094,Stimulus,presented,47
+138318,Stimulus,presented,1
+138541,Stimulus,presented,48
+138764,Stimulus,presented,1
+139990,Stimulus,presented,63
+141014,Stimulus,presented,0
+143014,Keyboard,received,None,wait
+143038,Stimulus,presented,0
+146581,stdout,received,'Trial 10 Target: 108800.00 Actual: 108800.00 Delta: 0.00'
+146605,Stimulus,presented,49
+146829,Stimulus,presented,1
+147053,Stimulus,presented,50
+147277,Stimulus,presented,1
+147501,Stimulus,presented,51
+147725,Stimulus,presented,1
+147949,Stimulus,presented,52
+148173,Stimulus,presented,1
+148397,Stimulus,presented,53
+148621,Stimulus,presented,1
+148845,Stimulus,presented,54
+149069,Stimulus,presented,1
+149293,Stimulus,presented,55
+149517,Stimulus,presented,1
+149741,Stimulus,presented,56
+149965,Stimulus,presented,1
+151190,Stimulus,presented,64
+152214,Stimulus,presented,0
+154214,Keyboard,received,None,wait
+154239,Stimulus,presented,0
+167781,Experiment,ended
+167781,Data,saved
+167807,Stimulus,presented,65

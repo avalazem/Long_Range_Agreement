@@ -1,0 +1,21 @@
+#Expyriment 0.11.dev5 (Python 3.12.7), .xpd-file, coding: UTF-8
+#date: Wed May 21 2025 12:50:21
+#--EXPERIMENT INFO
+#e mainfile: long_range.py
+#e sha1: 9d0549
+#e modules: 
+#e Experiment: Long-Range Agreement - Sub train Run 1)
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 1
+subject_id,TrialNumber,TrialOnset_ms,Sentence,Structure,Modality,StimulusDuration_ms,KEY,RT_ms
+1,1,2025,Proche des malades ces marins punit des peintres.,sr_pp,auditory,4020,TIMEOUT,-1
+1,2,14000,Des champions auprès du marin suit des serveurs.,lr_pp,auditory,4024,TIMEOUT,-1
+1,3,25500,Ces matelots que ce peintre endort savent cuisiner.,lr_obj,auditory,4025,TIMEOUT,-1
+1,4,37000,Près du malade un patient servent le prêtre.,sr_pp,auditory,4025,TIMEOUT,-1
+1,5,49500,Ce boucher que les plombiers attendent écrit rarement.,lr_obj,auditory,4025,TIMEOUT,-1
+1,6,62500,Le gardien que ce marchand sert repart demain.,lr_obj,visual,3584,TIMEOUT,-1
+1,7,73700,Loin du chanteur le malade suit ce patient.,sr_pp,visual,3584,TIMEOUT,-1
+1,8,85900,Les champions que ces facteurs séduisent veulent dormir.,lr_obj,visual,3584,TIMEOUT,-1
+1,9,97600,Les champions loin des clients craint des vendeurs.,lr_pp,visual,3584,TIMEOUT,-1
+1,10,108800,Les bouchers près du malade bénissent les matelots.,lr_pp,visual,3584,TIMEOUT,-1
